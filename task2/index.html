@@ -89,12 +89,138 @@
 			<div class="image_box"><span></span><img src="img/work-7.png" alt="work1"></div>
 			<div class="image_box"><span></span><img src="img/work-8.png" alt="work1"></div>
 		</div>
+		<div class="load_more">
+			<p><a href="#">LOAD MORE WORK</a></p>
+		</div>
 	</div>
-	<div class="work_process"></div>
-	<div class="services"></div>
-	<div class="testimonials"></div>
-	<div class="clients"></div>
-	<div class="need a project"></div>
+	<div class="work_process">
+		<div class="work_process_content">
+			<h2>Our Work Process</h2>
+			<p>Was years it seasons was there form he in in them together over that, <br>third sixth gathered female creeping bearing behold years.</p>
+			<div class="video_player">
+				<img src="img/video.png" alt="video">
+				<a href="#" class="btn"><img src="img/play_icon.png" alt="play"></a>
+			</div>
+		</div>
+	</div>
+	<div class="services">
+		<div class="services_content clearfix">
+			<div class="services_item">
+				<p><img src="img/pe-7s-diamond.png" alt="diamond"></p>
+				<h3>UI / UX DESIGN</h3>
+				<p>Be set fourth land god darkness<br>make it wherein own</p>
+			</div>
+			<div class="services_item">
+				<p><img src="img/pe-7s-arc.png" alt="WEB DEVELOPMENT"></p>
+				<h3>WEB DEVELOPMENT</h3>
+				<p>A she'd them bring void moving<br>third she'd kind fill</p>
+			</div>
+			<div class="services_item">
+				<p><img src="img/pe-7s-phone.png" alt="APP / MOBILE"></p>
+				<h3>APP / MOBILE</h3>
+				<p>Dominion man second spirit he,<br>earth they're creeping</p>
+			</div>
+			<div class="services_item">
+				<p><img src="img/pe-7s-joy.png" alt="GAME DESIGN"></p>
+				<h3>GAME DESIGN</h3>
+				<p>Morning his saying moveth it <br>multiply appear life be</p>
+			</div>
+			<div class="services_item">
+				<p><img src="img/pe-7s-plane.png" alt="SEO / MARKETING"></p>
+				<h3>SEO / MARKETING</h3>
+				<p>Give won't after land fill creeping<br>meat you, may</p>
+			</div>
+			<div class="services_item">
+				<p><img src="img/pe-7s-star.png" alt="PHOTOGRAPHY"></p>
+				<h3>PHOTOGRAPHY</h3>
+				<p>Creepeth one seas cattle grass <br>give moving saw give</p>
+			</div>
+			<div class="services_item">
+				<p><img src="img/pe-7s-magic-wand.png" alt="GRAPHIC DESIGN"></p>
+				<h3>GRAPHIC DESIGN</h3>
+				<p>Open, great whales air rule for, <br>fourth life whales</p>
+			</div>
+			<div class="services_item">
+				<p><img src="img/pe-7s-paint-bucket.png" alt="ILLUSTRATIONS"></p>
+				<h3>ILLUSTRATIONS</h3>
+				<p>Whales likeness hath, man kind <br>for them air two won't</p>
+			</div>
+		</div>
+	</div>
+	<div class="testimonials">
+		<div class="testi_list">
+			<div class="testi_item">
+				<p class="testi_text">Nothing last forever, We can change the future.</p>
+				<p class="testi_person">Imam Fauzi</p>
+			</div>
+			<div class="testi_item">
+				<p class="testi_text">Outstanding job and exceeded all expectations. It was a pleasure <br>to work with them on a sizable first project and am looking <br>forward to start the next one asap.</p>
+				<p class="testi_person">Michael Hopkins</p>
+			</div>
+			<div class="testi_item">
+				<p class="testi_text">Abra kadabra, Keep smiling.</p>
+				<p class="testi_person">Ahmad Imam</p>
+			</div>
+		</div>
+		<div class="dot_list" style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1);"></span> 
+		  <span class="dot" onclick="currentSlide(2);"></span> 
+		  <span class="dot" onclick="currentSlide(3);"></span> 
+		</div>
+	</div>
+	<div class="clients">
+		<div class="client_list">
+			<div class="client_item"><img src="img/1.png" alt="client_1"></div>
+			<div class="client_item"><img src="img/2.png" alt="client_2"></div>
+			<div class="client_item"><img src="img/3.png" alt="client_3"></div>
+			<div class="client_item"><img src="img/4.png" alt="client_4"></div>
+			<div class="client_item"><img src="img/5.png" alt="client_5"></div>
+		</div>
+	</div>
+	<div class="contact">
+		<div class="contact_content">
+			<h2>Need a Project?</h2>
+			<p>Let us know what you're looking for in an agency. We'll take a look and see <br>if this could be the start of something beautiful.</p>
+			<div class="row">
+				<input type="text" placeholder="Your Name">
+				<input type="text" placeholder="Your Email">
+			</div>
+			<div class="row">
+				<input type="text" placeholder="Your Title">
+			</div>
+			<div class="row">
+				<textarea></textarea>
+			</div>
+		</div>
+	</div>
 	<div class="footer"></div>
+	<script>
+		var slideIndex = 2;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("testi_item");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 2}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+	</script>
 </body>
 </html>

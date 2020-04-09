@@ -294,8 +294,11 @@ ul.logo li a:hover:not(.active), ul.menu_list li a:hover:not(.active) {
 .contact{
 	background-color: #f5f5f5;
 }
+.contact_content p{
+	font-size: 16px;
+}
 .contact_content{
-	max-width:630px;
+	max-width:680px;
 	padding:80px 15px;
 	margin:0 auto;
 	text-align: center;

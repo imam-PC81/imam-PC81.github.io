@@ -7,6 +7,8 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 <link href="css/style.css" type="text/css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 <body>
 	
@@ -153,15 +155,15 @@
 	<div id="testimonials" class="testimonials">
 		<div class="testi_list">
 			<div class="testi_item">
-				<p class="testi_text">Nothing last forever, We can change the future.</p>
+				<div class="comment"><p class="testi_text">Nothing last forever, We can change the future.</p></div>
 				<p class="testi_person">Imam Fauzi</p>
 			</div>
 			<div class="testi_item">
-				<p class="testi_text">Outstanding job and exceeded all expectations. It was a pleasure <br>to work with them on a sizable first project and am looking <br>forward to start the next one asap.</p>
+				<div class="comment"><p class="testi_text">Outstanding job and exceeded all expectations. It was a pleasure <br>to work with them on a sizable first project and am looking <br>forward to start the next one asap.</p></div>
 				<p class="testi_person">Michael Hopkins</p>
 			</div>
 			<div class="testi_item">
-				<p class="testi_text">Abra kadabra, Keep smiling.</p>
+				<div class="comment"><p class="testi_text">Abra kadabra, Keep smiling.</p></div>
 				<p class="testi_person">Ahmad Imam</p>
 			</div>
 		</div>
@@ -233,6 +235,34 @@
 		</div>
 	</div>
 	<script>
+		$(document).ready(function(){
+			var highest=0;
+			function heightcheck(callback){
+				$( ".comment" ).each(function( index ) {
+				  var height = $(this).height();
+					if(highest < height){
+						highest = height;
+					}
+				});
+				console.log("run1");
+				$( ".comment" ).each(function( index ) {
+				  $(this).attr("style","height:"+highest+"px");
+				});
+				console.log("run3");
+			}
+			function setheight(heighest){
+				$( ".comment" ).each(function( index ) {
+				  $(this).attr("style","height:"+highest+"px");
+				});
+				console.log("run3");
+			}
+			heightcheck(function(){
+				console.log("run2");
+				setheight(highest);
+			});
+			console.log(highest);
+			
+		});
 		function gotocontact(){
 			var elmnt = document.getElementById("contact");
   elmnt.scrollIntoView();

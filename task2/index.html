@@ -154,15 +154,15 @@
 	</div>
 	<div id="testimonials" class="testimonials">
 		<div class="testi_list">
-			<div class="testi_item">
+			<div class="testi_item anim">
 				<div class="comment"><p class="testi_text">Nothing last forever, We can change the future.</p></div>
 				<p class="testi_person">Imam Fauzi</p>
 			</div>
-			<div class="testi_item">
+			<div class="testi_item anim">
 				<div class="comment"><p class="testi_text">Outstanding job and exceeded all expectations. It was a pleasure <br>to work with them on a sizable first project and am looking <br>forward to start the next one asap.</p></div>
 				<p class="testi_person">Michael Hopkins</p>
 			</div>
-			<div class="testi_item">
+			<div class="testi_item anim">
 				<div class="comment"><p class="testi_text">Abra kadabra, Keep smiling.</p></div>
 				<p class="testi_person">Ahmad Imam</p>
 			</div>
@@ -235,63 +235,87 @@
 		</div>
 	</div>
 	<script>
-		$(document).ready(function(){
-			var highest=0;
-			function heightcheck(callback){
-				$( ".comment" ).each(function( index ) {
-				  var height = $(this).height();
-					if(highest < height){
-						highest = height;
-					}
-				});
-				console.log("run1");
-				$( ".comment" ).each(function( index ) {
-				  $(this).attr("style","height:"+highest+"px");
-				});
-				console.log("run3");
-			}
-			function setheight(heighest){
-				$( ".comment" ).each(function( index ) {
-				  $(this).attr("style","height:"+highest+"px");
-				});
-				console.log("run3");
-			}
-			heightcheck(function(){
-				console.log("run2");
-				setheight(highest);
-			});
-			console.log(highest);
-			
-		});
-		function gotocontact(){
-			var elmnt = document.getElementById("contact");
-  elmnt.scrollIntoView();
-		}
-		var slideIndex = 2;
-showSlides(slideIndex);
+var slideIndex = 1;
+var auto;
+$('#testimonials').ready(function() {
+    autoslider();
+});
+
+function autoslider() {
+    var i;
+    var slides = document.getElementsByClassName("testi_item");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    auto = setTimeout(autoslider, 4000); // Change image every 2 seconds
+}
+$(document).ready(function() {
+    var highest = 0;
+
+    function heightcheck(callback) {
+        $(".comment").each(function(index) {
+            var height = $(this).height();
+            if (highest < height) {
+                highest = height;
+            }
+        });
+        console.log("run1");
+        $(".comment").each(function(index) {
+            $(this).attr("style", "height:" + highest + "px");
+        });
+        console.log("run3b");
+    }
+    heightcheck(function() {
+        console.log("run2");
+        setheight(highest);
+    });
+    console.log(highest);
+
+});
+
+function gotocontact() {
+    var elmnt = document.getElementById("contact");
+    elmnt.scrollIntoView();
+}
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+	clearTimeout(auto);
+    showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("testi_item");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 2}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+    var i;
+    var slides = document.getElementsByClassName("testi_item");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 2
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    auto = setTimeout(autoslider, 4000);
 }
 	</script>
 </body>

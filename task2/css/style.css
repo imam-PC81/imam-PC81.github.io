@@ -246,6 +246,12 @@ ul.logo li a:hover:not(.active), ul.menu_list li a:hover:not(.active) {
 	color:white;
 	text-align: center;
 }
+
+.comment {
+    display: table-cell;
+    width: 10000px;
+    vertical-align: middle;
+}
 .testi_text{
 	color:white;
 	font-size: 24px;

@@ -10,9 +10,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
-<body class="hide">
-	
-	
+<body>
+	<div id="load"><span id="a"></span><span id="b"></span></div>
+	<div id="all" class="hide">
 	<div id="home" class="header">
 		<div class="menu clearfix">
 			<ul class="logo">
@@ -234,11 +234,44 @@
 			</div>
 		</div>
 	</div>
+	</div>
 	<script>
+;(function(){
+  function id(v){return document.getElementById(v); }
+  function loadbar() {
+    var ovrl = id("load"),
+        prog = id("a"),
+        stat = id("b"),
+        img = document.images,
+        c = 0;
+        tot = img.length;
+
+    function imgLoaded(){
+      c += 1;
+      var perc = ((100/tot*c) << 0) +"%";
+      prog.style.width = perc;
+      stat.innerHTML = "Loading "+ perc;
+      if(c===tot) return doneLoading();
+    }
+    function doneLoading(){
+      ovrl.style.opacity = 0;
+      setTimeout(function(){ 
+        ovrl.style.display = "none";
+      }, 1200);
+    }
+    for(var i=0; i<tot; i++) {
+      var tImg     = new Image();
+      tImg.onload  = imgLoaded;
+      tImg.onerror = imgLoaded;
+      tImg.src     = img[i].src;
+    }    
+  }
+  document.addEventListener('DOMContentLoaded', loadbar, false);
+}());
 var slideIndex = 1;
 var auto;
 $(window).on('load', function(){
-	$('body').attr("class","fade")
+	$('.all').attr("class","fade")
 	$('#testimonials').ready(function() {
 		autoslider();
 	});

@@ -10,7 +10,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
-<body style="visibility: hidden">
+<body class="hide">
 	
 	
 	<div id="home" class="header">
@@ -238,7 +238,7 @@
 var slideIndex = 1;
 var auto;
 $(window).on('load', function(){
-	$('body').attr("style","visibility:visible")
+	$('body').attr("class","fade")
 	$('#testimonials').ready(function() {
 		autoslider();
 	});

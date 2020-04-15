@@ -182,6 +182,7 @@ ul.logo li a:hover:not(.active), ul.menu_list li a:hover:not(.active) {
   -webkit-animation-duration: 1s;
   animation-name: hover;
   animation-duration: 1;
+	opacity: 0.5;
 }
 @-webkit-keyframes hover {
   from {opacity: 1} 

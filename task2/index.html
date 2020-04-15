@@ -10,7 +10,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
-<body>
+<body style="visibility: hidden">
 	
 	
 	<div id="home" class="header">
@@ -237,28 +237,11 @@
 	<script>
 var slideIndex = 1;
 var auto;
-$('#testimonials').ready(function() {
+$(window).load(function){
+	$('body').attr("style","visibility:visible")
+	$('#testimonials').ready(function() {
     autoslider();
 });
-
-function autoslider() {
-    var i;
-    var slides = document.getElementsByClassName("testi_item");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    auto = setTimeout(autoslider, 4000); // Change image every 2 seconds
-}
 $(document).ready(function() {
     var highest = 0;
 
@@ -282,6 +265,25 @@ $(document).ready(function() {
     console.log(highest);
 
 });
+}		
+function autoslider() {
+    var i;
+    var slides = document.getElementsByClassName("testi_item");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    auto = setTimeout(autoslider, 4000); // Change image every 2 seconds
+}
 
 function gotocontact() {
     var elmnt = document.getElementById("contact");

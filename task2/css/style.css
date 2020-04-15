@@ -14,7 +14,7 @@ body{
 }
 p{
 	font-size:18px;
-	font-weight: bold;
+	font-weight: 600;
 	color:#787878;
 	line-height: 1.6;
 }
@@ -41,7 +41,7 @@ p{
 h2{
 	color:#1d1d1d;
 	font-size:38px;
-	font-weight: bold;
+	font-weight: 600;
 }
 .content{
 	max-width: 615px;
@@ -71,7 +71,7 @@ ul.logo li a, ul.menu_list li a {
   padding: 14px 16px;
   text-decoration: none;
 	    font-size: 14px;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 ul.logo li a:hover:not(.active), ul.menu_list li a:hover:not(.active) {
@@ -159,7 +159,7 @@ ul.logo li a:hover:not(.active), ul.menu_list li a:hover:not(.active) {
 }
 .number_text h4{
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: 600;
 	color:white;
 	margin:0;
 }
@@ -193,7 +193,7 @@ ul.logo li a:hover:not(.active), ul.menu_list li a:hover:not(.active) {
 	width:100%;
 	padding:20px 0;
 	font-size: 12px;
-	font-weight: bold;
+	font-weight: 600;
 	color:#8e8e8e;
 }
 .work_process h2,.work_process p{
@@ -238,7 +238,7 @@ ul.logo li a:hover:not(.active), ul.menu_list li a:hover:not(.active) {
 }
 .services_item h2{
 	font-size:12px;
-	font-weight: bold;
+	font-weight: 600;
 }
 .testimonials{
 	padding:100px;
@@ -322,6 +322,9 @@ input[type=text],textarea{
 	border: none;
 	width: 100%;
 	padding: 18px 20px;
+}
+.footer p{
+	font-weight: 500;
 }
 textarea{
 	height:140px;

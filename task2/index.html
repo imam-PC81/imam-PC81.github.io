@@ -240,31 +240,31 @@ var auto;
 $(window).load(function(){
 	$('body').attr("style","visibility:visible")
 	$('#testimonials').ready(function() {
-    autoslider();
-});
-$(document).ready(function() {
-    var highest = 0;
+		autoslider();
+	});
+	$(document).ready(function() {
+		var highest = 0;
 
-    function heightcheck(callback) {
-        $(".comment").each(function(index) {
-            var height = $(this).height();
-            if (highest < height) {
-                highest = height;
-            }
-        });
-        console.log("run1");
-        $(".comment").each(function(index) {
-            $(this).attr("style", "height:" + highest + "px");
-        });
-        console.log("run3b");
-    }
-    heightcheck(function() {
-        console.log("run2");
-        setheight(highest);
-    });
-    console.log(highest);
+		function heightcheck(callback) {
+			$(".comment").each(function(index) {
+				var height = $(this).height();
+				if (highest < height) {
+					highest = height;
+				}
+			});
+			console.log("run1");
+			$(".comment").each(function(index) {
+				$(this).attr("style", "height:" + highest + "px");
+			});
+			console.log("run3b");
+		}
+		heightcheck(function() {
+			console.log("run2");
+			setheight(highest);
+		});
+		console.log(highest);
 
-});
+	});
 });		
 function autoslider() {
     var i;

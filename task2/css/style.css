@@ -71,7 +71,7 @@ ul.logo li a, ul.menu_list li a {
   padding: 14px 16px;
   text-decoration: none;
 	    font-size: 14px;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 ul.logo li a:hover:not(.active), ul.menu_list li a:hover:not(.active) {

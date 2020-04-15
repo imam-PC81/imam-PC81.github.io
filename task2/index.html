@@ -257,6 +257,7 @@
       ovrl.style.opacity = 0;
       setTimeout(function(){ 
         ovrl.style.display = "none";
+		  contentload();
       }, 1200);
     }
     for(var i=0; i<tot; i++) {
@@ -270,7 +271,7 @@
 }());
 var slideIndex = 1;
 var auto;
-$(window).on('load', function(){
+function contentload(){
 	$('.all').attr("class","fade")
 	$('#testimonials').ready(function() {
 		autoslider();
@@ -298,7 +299,7 @@ $(window).on('load', function(){
 		console.log(highest);
 
 	});
-});		
+}		
 function autoslider() {
     var i;
     var slides = document.getElementsByClassName("testi_item");

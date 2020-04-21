@@ -18,6 +18,7 @@
 			<ul class="logo">
 				<li><a class="logo" href="#home"><img src="img/logo.png" alt="logo"></a></li>
 			</ul>
+			<div id="menu" class="spOnly">Menu</div>
 			<ul class="menu_list">
 				<li><a class="active" href="#home">HOME</a></li>
 				<li><a href="#about">ABOUT</a></li>
@@ -299,6 +300,28 @@ function contentload(){
 		console.log(highest);
 
 	});
+	$( window ).resize(function() {
+	  var highest = 0;
+
+		function heightcheck(callback) {
+			$(".comment").each(function(index) {
+				var height = $(this).height();
+				if (highest < height) {
+					highest = height;
+				}
+			});
+			console.log("run1");
+			$(".comment").each(function(index) {
+				$(this).attr("style", "height:" + highest + "px");
+			});
+			console.log("run3b");
+		}
+		heightcheck(function() {
+			console.log("run2");
+			setheight(highest);
+		});
+		console.log(highest);
+	});
 }		
 function autoslider() {
     var i;
@@ -353,6 +376,11 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
     auto = setTimeout(autoslider, 4000);
 }
+		$(document).ready(function(){
+  $("#menu").click(function(){
+    $(".menu_list").slideToggle();
+  });
+});
 	</script>
 </body>
 </html>

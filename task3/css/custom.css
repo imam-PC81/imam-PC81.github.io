@@ -304,3 +304,11 @@ animation-name: example;
 	from {transform: translateY(-100%);}
 	to {transform: translateY(0);}
 }
+.fadeIn{
+	animation-name: fadeIn;
+	animation-duration: 1s;
+}
+@keyframes fadeIn{
+	from {opacity: 0.5;}
+	to {opacity: 1;}
+}

@@ -174,17 +174,25 @@ animation-name: example;
 	color:#ffffff;
 }
 .client_photo img{
-	width: 100%;
+	height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     vertical-align: middle;
     border-style: none;
     position: relative;
 }
 .wrap_photo{
 	width: 100%;
-	overflow: hidden;
+    overflow: hidden;
+    height: 100%;
 }
 .w-63{
 	width: 63%;
+}
+@media (max-width: 991px){
+	.w-63{
+	width: 100%;
+}
 }
 .dot{
 	cursor: pointer;
@@ -262,8 +270,12 @@ animation-name: example;
 .footer-2 .text span{
 	color:#ffffff;
 }
+@font-face {
+  font-family: webdingsss;
+  src: url("../fonts/webdings.ttf");
+}
 .footer-2 .text love{
-	font-family: Webdings, sans-serif;
+	font-family: webdingsss;
 	color:#e84545;
 }
 .footer-2 .container{
@@ -272,4 +284,23 @@ animation-name: example;
 }
 .spongebob:hover{
 	cursor: url("../img/cursor.png"),auto;
+}
+.photo img{
+	width: 100%;
+}
+.slideLeft{
+	animation-name: slideleft;
+	animation-duration: 1s;
+}
+@keyframes slideleft{
+	from {transform: translateX(100%);}
+	to {transform: translateX(0);}
+}
+.slideBottom{
+	animation-name: slidebottom;
+	animation-duration: 1s;
+}
+@keyframes slidebottom{
+	from {transform: translateY(-100%);}
+	to {transform: translateY(0);}
 }

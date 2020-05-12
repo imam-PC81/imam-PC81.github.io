@@ -15,6 +15,19 @@ var slideIndex = 0,auto,i;
 			});
 			autoslider();
 		});
+$( window ).resize(function() {
+	console.log("run 1");
+					$('.testi_text').height(""); 
+  $('.testimonials').each(function(){
+				var highestBox = 0;
+				$('.testi_text', this).each(function(){
+					if($(this).height() > highestBox) {
+						highestBox = $(this).height(); 
+					}
+				});
+	  			$('.testi_text',this).height(highestBox);
+			});
+});
 		function autoslider() {
 		var i;
 		for (i = 0; i < photo.length; i++) {
@@ -63,3 +76,13 @@ var slideIndex = 0,auto,i;
 			dots[slideIndex - 1].className += " active";
 			auto = setTimeout(autoslider, 4000);
 		}
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+
+    if(height  >= 50) {
+        $('#navbar').addClass('fixed');
+		} else {
+			$('#navbar').removeClass('fixed');
+		}
+	
+});

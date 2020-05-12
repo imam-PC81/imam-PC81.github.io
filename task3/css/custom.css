@@ -46,6 +46,18 @@ li.nav-item:last-child{
 	padding:40px 0 !important;
 	border-bottom: 1px solid #505269;
 }
+.navbar.navbar-expand-lg.navbar-dark.fixed{
+	position: fixed!important;
+    top: 0;
+	z-index: 999;
+    background: #2a2e48;
+	transition: 1s;
+	width: 100%;
+}
+.fixed .border_bottom.container{
+	padding:10px 0 !important;
+	border-bottom: none;
+}
 .header h1{
 	margin-top: 145px;
 	font-family: 'Open Sans', sans-serif;
@@ -332,4 +344,69 @@ animation-name: example;
 @keyframes fadeIn{
 	from {opacity: 0.5;}
 	to {opacity: 1;}
+}
+
+
+/*Responsive thing */
+@media (max-width:1366px){
+	.w-63 {
+    width: 100%;
+}
+}
+@media (max-width:768px){
+	.navbar-dark .navbar-toggler{
+		background: #e84545;
+		border-radius: 50%;
+	}
+	.navbar-toggler-icon{
+		    width: 22px;
+    height: 38px;
+		background-size: 120% 74%;
+	}
+	.max_sp{
+		max-height: 315px;
+	}
+	.onlyPc{
+		display: none;
+	}
+	.header h1{
+		font-size: 44px;
+	}
+	.header .leadText{
+		font-size: 18px;
+	}
+	#team .row{
+		text-align: center !important;
+	}
+	.clients .container {
+		padding: 15px 20px;
+	}
+	.client_photo img{
+		width: 100%;
+	}
+	.testimonials .testi_text{
+		font-size: 26px;
+	}
+	#download h2{
+		line-height: 1.2;
+	}
+	#download .sub{
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.bTn{
+		border-radius: 1px;
+	}
+}
+@media (max-width: 575px){
+	.header h1 {
+		font-size: 36px;
+	}
+	#team .container{
+		padding-right: 35px;
+    padding-left: 35px;
+	}
+	.testimonials .testi_text{
+		line-height: 34px;
+	}
 }

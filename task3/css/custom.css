@@ -198,6 +198,10 @@ animation-name: example;
 	font-size:36px;
 	line-height: 42px;
 	color:#ffffff;
+	float:left;
+	width: 100%;
+	margin-left: -1000em;
+	margin-right: -1000em;
 }
 .client_names .client_name{
 	font-family: 'Raleway', sans-serif;

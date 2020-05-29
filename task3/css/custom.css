@@ -45,6 +45,7 @@ li.nav-item:last-child{
 .border_bottom.container{
 	padding:40px 0 !important;
 	border-bottom: 1px solid #505269;
+	transition: 0.5s;
 }
 .navbar.navbar-expand-lg.navbar-dark.fixed{
 	position: fixed!important;
@@ -59,14 +60,14 @@ li.nav-item:last-child{
 	border-bottom: none;
 }
 .header h1{
-	margin-top: 145px;
+	margin-top: 220px;
 	font-family: 'Open Sans', sans-serif;
 	font-size:65px;
 	font-weight: bold;
 }
 @media (max-width: 425px){
 	.header h1{
-		margin-top: 70px;
+		margin-top: 180px;
 		font-size:2rem;
 	}
 }
@@ -413,4 +414,40 @@ animation-name: example;
 	.testimonials .testi_text{
 		line-height: 34px;
 	}
+}
+.navbar-toggler div{
+  width: 21px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+	transition: 0.5s;
+}
+.navbar-toggler[aria-expanded="true"] div:nth-child(1){
+	transform: translateY(8px) rotate(-45deg);
+}
+.navbar-toggler[aria-expanded="true"] div:nth-child(2){
+	opacity: 0;
+}
+.navbar-toggler[aria-expanded="true"] div:nth-child(3){
+	transform: translateY(-8px) rotate(45deg);
+}
+.navbar-toggler{
+	transition: 1s;
+}
+.navbar-toggler[aria-expanded="true"]{
+	border-radius: 0;
+}
+.navbar-collapse.justify-content-end.collapse.show{
+	    background: rgba(42, 46, 72, 0.9);
+    margin-top: 20px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #fff;
+	transition: 0.5s;
+}
+.fixed .navbar-collapse.justify-content-end.collapse.show{
+	border-bottom: none;
+	padding-bottom: 0;
+}
+.fixed{
+	border-bottom:1px solid #fff;
 }

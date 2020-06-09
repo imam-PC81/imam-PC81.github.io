@@ -1,0 +1,354 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+a{
+    text-decoration: none;
+}
+/* css start from here */
+body{
+    font-family: 'Hiragino Kaku Gothic ProN', Arial, Meiryo, sans-serif;
+}
+#header,#content,#footer,#footerNavigation{
+    width:100%;
+}
+.wrap{
+    width: 960px;
+    margin: auto;
+    padding: 0 10px;
+}
+.logo{
+    float:left;
+}
+.searchBar{
+    display: flex;
+    float:right;
+}
+#header{
+    padding:15px 0;
+    border-bottom: 2px solid #d0102c;
+}
+.searchBar a{
+    padding: 15px 20px;
+    background-color: #d0102c;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: bold;
+    color: #ffffff;
+}
+.searchBar a:hover{
+    background-color: #de576b;
+}
+.searchBar form{
+    margin-right: 14px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+}
+.searchBar input[type=text]{
+    width: 136px;
+    margin: 10px 10px 10px 14px;
+    border: none;
+    font-size: 0.85em;
+}
+.searchBar input[type=submit]{
+    height: 43px;
+    width: 33px;
+    background:url("../images/ico_001.png") no-repeat left;
+    border: none;
+    color: transparent;
+}
+.headingLevel1{
+    margin-top: 60px;
+    padding: 6px 30px 3px;
+    background:url("../images/ico_002.png") no-repeat left;
+    font-size: 2em;
+    font-weight: bold;
+}
+.mainVisual{
+    height: 300px;
+    margin-top: 30px;
+}
+.buttonNavigation{
+    margin-top:45px;
+    text-align: center;
+}
+.buttonNavigation a{
+    display: inline-block;
+    width: 350px;
+    padding:23px 0px;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.buttonNavigation .btnSimulation{
+    margin-right: 58px;
+    background:url("../images/ico_003.png") no-repeat 323px center;
+    background-color: #e80799;
+    box-shadow: 0px 4px #910861;
+}
+.buttonNavigation .btnApply{
+    background:url("../images/ico_003.png") no-repeat 323px center;
+    background-color: #d0102c;
+    box-shadow: 0px 4px #800013;
+}
+.buttonNavigation .btnSimulation:hover{
+    background-color: #ef51b7;
+}
+.buttonNavigation .btnApply:hover{
+    background-color: #de576b;
+}
+.rateBlock{
+    margin-top:50px;
+}
+.rateItem {
+    display: inline-block;
+    width: 298px;
+    margin-left: 25px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Meiryo;
+    vertical-align: top;
+}
+.rateWrap{
+    margin:15px 15px;
+    padding-bottom:10px;
+}
+.rateItem:first-child{
+    margin-left: 0px;
+}
+.rateTitle{
+    padding-top: 10px;
+    margin-bottom: 12px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.rateDetail{
+    color: #d0102c;
+    font-size: 2em;
+    font-weight: bold;
+}
+span.rateNumber{
+    font-size: 1.7em;
+}
+.rateDesc {
+    margin-top: 16px;
+    font-size: 0.9em;
+}
+.button{
+    margin-top: 31px;
+    text-align: center;
+    padding-bottom: 4px;
+}
+.button a{
+    display: inline-block;
+    width:350px;
+    padding:23px 0px 20px 0px;
+    background: url("../images/ico_004.png") no-repeat right;
+    border:1px solid #999999;
+    border-radius: 5px;
+    box-shadow: 0px 4px #999999;
+    font-size: 1.1em;
+    font-weight: bold;
+    color:#222222;
+}
+.button:hover a{
+    background-color: #f4f4f4;
+}
+.headingLevel2{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 9px 30px 4px;
+    background:url("../images/ico_002.png") no-repeat left;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+.reasonItem:first-child{
+    margin-left: 0px;
+}
+.reasonItem {
+    display: inline-block;
+    width: 298px;
+    margin-left: 25px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Meiryo;
+    vertical-align: top;
+}
+.reasonWrap {
+    margin: 25px 16px 0px;
+    padding-bottom: 20px;
+}
+.reasonTitle{
+    padding: 0px 0px 0px 0px;
+    font-size: 1.6em;
+    font-weight: bold;
+    line-height: 1.16;
+    color:#d0102c;
+}
+.reasonDesc {
+    margin-top: 17px;
+    font-size: 1em;
+    line-height: 1.4;
+    text-align: left;
+}
+.reasonImage{
+    margin-top:20px;
+}
+.note {
+    margin: 18px 0px;
+}
+.banner {
+    margin: 43px auto;
+}
+.banner:hover img{
+    opacity: 0.7;
+}
+.banner p{
+    text-align: center;
+}
+.headingLevel2.nd{
+    margin-top: 57px;
+    margin-bottom: 27px;
+}
+.questions li{
+    padding-left: 25px;
+    margin-bottom: 9px;
+    line-height: 1.5;
+}
+.questions li:before{
+    position: absolute;
+    margin-left: -24px;
+    margin-top: -3px;
+    content: "Q";
+    color: #d0102c;
+    font-weight: bold;
+    font-size: 1.15em;
+    font-family: Meiryo;
+}
+.questions li:hover a{
+    text-decoration: underline;
+}
+.questions li a{
+    font-size: 1.15em;
+    text-decoration: none;
+    font-family: Meiryo;
+    color: #00216c;
+    letter-spacing: -0.4px;
+}
+.button.nd{
+    margin-top:24px;
+}
+.linkCatalogue{
+    margin-top:60px;
+    padding:30px 30px 11px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+}
+.linkCatalogue ul {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+.linkCatalogue li{
+    padding-left: 16px;
+    margin-bottom: 17px;
+    background: url("../images/ico_005.png") no-repeat left;
+    color:#00216c;
+}
+.linkCatalogue li a{
+    color:#00216c;
+}
+.linkCatalogue li:hover a{
+    text-decoration: underline;
+}
+#footerNavigation{
+    margin-top:90px;
+    background-color: #f4f4f4;
+}
+#footerNavigation li{
+    float:left;
+    padding:30px 0px;
+}
+#footerNavigation li a{
+    padding:30px 16px;
+    color:#222222;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+#footerNavigation li:after{
+    content:"|";
+}
+#footerNavigation li.last:after{
+    content:"";
+}
+#footerNavigation li:hover a{
+    text-decoration: underline;
+}
+#footer{
+    padding: 30px 0px;
+    background-color: #999999;
+    color:#ffffff;
+    font-size: 0.75em;
+    line-height: 1.4;
+}
+#footer .copy{
+    font-size: 1.1em;
+}
+#pageTop{
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+}
+.wrapContent{
+    margin: 0 15px;
+}

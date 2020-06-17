@@ -1,4 +1,4 @@
 $(function(){
     $('.sampleItem').tile();
-	$('.reasonitem').tile();
+	$('.reasonitem .boxr').tile();
 });

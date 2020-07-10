@@ -3,10 +3,10 @@ Read the necessary files
 --------------------------------------------- */
 var pageUrl = document.location.href;
 if(pageUrl.indexOf('http')>-1){
-  this.JS_DIRECTRY = "http://localhost/tools/";
+  this.JS_DIRECTRY = "https://imam-pc81.github.io/tools/";
 //this.JS_DIRECTRY = "http://check:demo@checkdemo.web-works.ne.jp/debag_reg/";
 }else{
-  this.JS_DIRECTRY = "http://localhost/tools/";
+  this.JS_DIRECTRY = "https://imam-pc81.github.io/tools/";
 // this.JS_DIRECTRY = "http://check:demo@checkdemo.web-works.ne.jp/debag_reg/";
 }
 

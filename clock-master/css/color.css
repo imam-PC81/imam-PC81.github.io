@@ -1,0 +1,48 @@
+.light-on {
+  color: #ffffff !important;
+}
+.date-field div p.placeholder {
+  color: rgb(0 0 0 / 9%);
+}
+.clock-field .numbers .placeholder {
+  color: rgb(0 0 0 / 9%);
+}
+.clock-field .am,
+.clock-field .pm {
+  color: rgb(0 0 0 / 9%);
+}
+body#condition main.clock-display {
+  background-color: transparent;
+  color: #ffffff;
+  box-shadow: none;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body{
+  transition: 2s;
+  height: 100vh;
+  overflow: hidden;
+}
+body.afternoon {
+  background-color: #f8aa27;
+  background: linear-gradient(to top, rgb(252, 234, 187), rgb(248, 181, 0));
+  transition: 2s;
+}
+body.evening {
+  background-color: #001f38;
+      background: linear-gradient(to right, rgb(75, 108, 183), rgb(24, 40, 72));
+  transition: 2s;
+}
+body.morning {
+  background-color: #7adbf0;
+  background: linear-gradient(to right, rgb(178, 254, 250), rgb(14, 210, 247));
+  transition: 2s;
+}
+body.day {
+  background-color: #ffdd40;
+  background: linear-gradient(to right, rgb(41, 128, 185), rgb(109, 213, 250), rgb(255, 255, 255));
+  transition: 2s;
+}

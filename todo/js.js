@@ -5,7 +5,7 @@ var todos = retrievedData;
 if (retrievedData) {
     todo = todos;
 }else{
-  todo = '<li class="">Reservoir Dogs<span class="close">×</span></li><li class="">Pulp Fiction<span class="close">×</span></li><li class="">Jackie Brown<span class="close">×</span></li><li class="">Kill Bill<span class="close">×</span></li><li class="">Death Proof<span class="close">×</span></li><li class="">Inglourious Basterds<span class="close">×</span></li>';
+  todo = '<li class="">Reservoir Dogs</li><li class="">Pulp Fiction</li><li class="">Jackie Brown</li><li class="">Kill Bill</li><li class="">Death Proof</li><li class="">Inglourious Basterds</li>';
 localStorage.setItem("quentinTarantino", todo);
 }
   document.getElementById("myUL").innerHTML = todo;
@@ -67,4 +67,7 @@ localStorage.setItem("quentinTarantino", todo);
       div.style.display = "none";
     }
   }
+}
+function resetdata(){
+  localStorage.removeItem("quentinTarantino");
 }

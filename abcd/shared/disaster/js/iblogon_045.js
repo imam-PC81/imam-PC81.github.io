@@ -1,0 +1,1 @@
+document.write('<a href="https://ib.sevenbank.co.jp/IB/IB_U_CO_002/IB_U_CO_002_100.aspx?Lang=ja-JP" onclick="window.open(this.href, \'7bkwindow\', \'width=1020, height=820, menubar=no, toolbar=no, scrollbars=yes\'); return false;"><img width="213" height="60" alt="ダイレクトバンキングログオン" src="/shared/img/cmn_btn_012.gif" class="rollover"></a>');

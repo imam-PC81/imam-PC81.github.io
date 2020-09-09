@@ -1,0 +1,777 @@
+/************************************************
+/personal/atm/
+************************************************/
+/*---------------
+/personal/atm/index.html
+------------------*/
+.atmFeature01 .detail {
+	position:inherit;
+	height:auto;
+	width:auto;
+}
+
+.atmFeature01 .detail p {
+	position:inherit;
+	text-align:center;
+}
+
+.atmStep4Wrap01 .columnBlock01,
+.atmStep4Wrap01 .columnBlock02,
+.atmStep4Wrap01 .columnBlock03,
+.atmStep4Wrap01 .columnBlock04 {
+	width:100%;
+	text-align:left;
+	margin:0 0 10px 0;
+}
+
+.atmStep4Wrap01 .image p {
+	text-align:left;
+}
+
+
+
+/************************************************
+/personal/account/
+************************************************/
+/*---------------
+/personal/account/index.html
+------------------*/
+#mainSectionArea01 {
+	padding:0 10px;
+}
+
+#mainSectionArea01 .imgBlock {
+	float:none;
+	width:auto;
+	margin-bottom:10px;
+}
+
+#mainSectionArea01 .imgBlock img {
+	width:100%;
+	height:auto;
+}
+
+#mainSectionArea01 .openAccountBlock {
+	float:none;
+	width:auto;
+}
+
+#mainSectionArea01 .openAccountBlock .content {
+	min-height:auto;
+	height:auto !important;
+	height:auto;
+}
+
+#mainSectionArea01 .openAccountBlock .content p {
+	text-align:center;
+}
+
+#mainSectionArea01 .openAccountBlock .content p.btn {
+	margin:0;
+	padding: 11px 0 0;
+}
+
+#mainSectionArea01 .openAccountBlock .content p.btn a {
+	margin-top:5px;
+}
+
+#mainSectionArea01 .openAccountBlock .content div.link {
+	margin: 11px 0 0;
+}
+
+#mainSectionArea01 .openAccountBlock .content div.link p a > img,
+#mainSectionArea01 .openAccountBlock .content div.link p a > span{
+	display: inline-block;
+}
+
+#mainSectionArea01 .openAccountBlock .content div.link p a > span{
+	width: 68%;
+	line-height: 1.2;
+}
+
+
+/************************************************
+/personal/netbank/
+************************************************/
+/*---------------
+/personal/netbank/index.html
+------------------*/
+#mainSectionArea01 .imgBlock {
+	float:none;
+	width:auto;
+	margin-bottom:10px;
+}
+
+#mainSectionArea01 .imgBlock img {
+	width:100%;
+	height:auto;
+}
+#mainSectionArea01 .directloginBlock {
+	float:none;
+	width:auto;
+}
+#mainSectionArea01 .directloginBlock .bnr{
+	display:none;
+}
+#mainSectionArea01 .directloginBlock .btn{
+	display:block;
+	position:relative;
+	top:0;
+	background:#c1c1c1;
+}
+#mainSectionArea01 .directloginBlock .btn a,
+#mainSectionArea01 .directloginBlock .btn .textNolink{
+	width:50%;
+}
+#mainSectionArea01 .directloginBlock .btn a .Inner,
+#mainSectionArea01 .directloginBlock .btn .textNolink .Inner{
+	width:auto;
+	padding:10px 2% 0 2%;
+}
+#mainSectionArea01 .directloginBlock .btn a .linkBlocktext,
+#mainSectionArea01 .directloginBlock .btn .textNolink .linkBlocktext {
+	font-size:100% !important;
+}
+
+
+/*---------------
+/personal/netbank/deposit_loan/deposit/nyushukkin.html
+------------------*/
+.nyushukkinVisWrap02 {
+	background:none;	
+	padding-top:0;
+	width:auto;
+	margin:0 auto;
+}
+
+.nyushukkinVisWrap02 .nyushukkinVisWrapInner {
+	background-image:none;
+	background-color:#fefcf5;
+	padding:10px 17px 10px 10px;
+	border:solid 1px #eee6ce;
+}
+
+.nyushukkinVisWrap02 .nyushukkinVisWrapInner .sevenBlock {
+	background:url(/personal/netbank/deposit_loan/shared/img/deposit_line_001.gif) repeat-x left bottom;
+	margin-bottom:10px;
+}
+
+.nyushukkinVisWrap02 .nyushukkinVisWrapInner .sevenBlock .ico {
+	float:left;
+}
+
+.nyushukkinVisWrap02 .nyushukkinVisWrapInner .sevenBlock .read {
+	padding-left:50px;	
+}
+
+.nyushukkinVisWrap02 .nyushukkinVisWrapInner .yuchoBlock {
+	float:left;	
+	width:48%;
+}
+
+.nyushukkinVisWrap02 .nyushukkinVisWrapInner .otherBlock {
+	width:48%;
+	float:right;
+}
+
+.nyushukkinVisWrap02 .nyushukkinVisWrapInner .yuchoBlock p {
+	background:url(/personal/netbank/deposit_loan/shared/img/sp_deposit_ico_002.gif) no-repeat left center;
+	background-size:10px 19px;
+	-webkit-background-size:10px 19px;
+	-ms-background-size:10px 19px;
+	-moz-background-size:10px 19px;
+	padding:3px 0 3px 13px;
+}
+
+.nyushukkinVisWrap02 .nyushukkinVisWrapInner .otherBlock p {
+	background:url(/personal/netbank/deposit_loan/shared/img/sp_deposit_ico_003.gif) no-repeat left center;
+	background-size:9px 19px;
+	-webkit-background-size:9px 19px;
+	-ms-background-size:9px 19px;
+	-moz-background-size:9px 19px;
+	padding:3px 0 3px 13px;
+}
+
+.nyushukkinVisWrap02 .nyushukkinVisWrapInner .yuchoBlock a.linkBlock01,
+.nyushukkinVisWrap02 .nyushukkinVisWrapInner .otherBlock a.linkBlock01 {
+	margin-left:5px;
+	margin-bottom:6px;
+}
+
+
+/*---------------
+/personal/netbank/know/cashcard/ansho.html
+------------------*/
+.anshoWrap02 .ico {
+	float:left;
+}
+
+.anshoWrap02 .read {
+	padding-left:98px;
+	font-weight:bold;
+}
+
+.anshoWrap02 .ico,
+.anshoWrap02 .read {
+	margin-bottom:10px;	
+}
+
+.anshoWrap02 .stepBlock01,
+.anshoWrap02 .stepBlock02 {
+	border:solid 1px #ffd2d2;
+	padding:2px;
+}
+
+.anshoWrap02 .stepBlock01 .headingBlock01,
+.anshoWrap02 .stepBlock02 .headingBlock01 {
+	width:100%;
+	color:#000;
+	background:#fffbea;
+	font-weight:bold;
+	font-size:100%;
+	margin-bottom:0;
+	padding: 8px 0;
+}
+
+.anshoWrap02 .stepBlock01 .headingBlock01 img,
+.anshoWrap02 .stepBlock02 .headingBlock01 img {
+	display: inline-block;
+	vertical-align: middle;
+	/zoom: 1;
+	/display: inline;
+}
+
+.anshoWrap02 .stepBlock01 .headingBlock01 .ico,
+.anshoWrap02 .stepBlock02 .headingBlock01 .ico {
+	display: table-cell;
+	vertical-align: middle;
+	/zoom: 1;
+	/display: inline;
+	margin:0;
+	float:none;
+}
+
+.anshoWrap02 .stepBlock01 .headingBlock01 .title,
+.anshoWrap02 .stepBlock02 .headingBlock01 .title {
+	display: table-cell;
+	vertical-align: middle;
+	/zoom: 1;
+	/display: inline;
+}
+
+.anshoWrap02 .stepBlock01 dd,
+.anshoWrap02 .stepBlock02 dd {
+	padding:10px;
+}
+
+.anshoWrap02 .stepBlock02 .read01 {
+	background:#ff5357;
+	padding:13px;
+	width:auto;
+	margin:0 4px;
+	text-align:center;
+	font-weight:bold;
+	color:#fff;
+}
+
+
+/*---------------
+/personal/netbank/services/furikomi/index.html
+------------------*/
+.furikomiVisWrap02 {
+	background:#fefcf5;
+	border:solid 2px #eee6ce;
+	padding:20px;
+}
+
+.furikomiVisWrap02 .icoWrap {
+  background:#fff;
+	padding:30px 1px 1px;
+	border:solid 1px #facfd0;
+}
+
+.furikomiVisWrap02 .icoWrap .icoWrapInner {
+	width:252px;
+	margin:0 auto;	
+}
+
+.furikomiVisWrap02 .icoWrap .icoWrapInner .ico01 {
+  float:left;	
+	width:126px;
+	text-align:center;	
+}
+
+.furikomiVisWrap02 .icoWrap .icoWrapInner .ico02 {
+  float:right;	
+	width:126px;
+	text-align:center;	
+}
+
+.furikomiVisWrap02 .icoWrap .read {
+	background:#fff4f4;
+	padding:10px;
+}
+
+.furikomiVisWrap02 .icoWrap .read p {
+	margin:0;
+}
+
+
+/*---------------
+/personal/netbank/services/autoDeposit/index.html
+------------------*/
+.autoD_maxW,
+.autoD_content02 p.cnt02_img01 img{
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width:677px;
+	width:100%;
+}
+/* img */
+.autoD_mvArea p.autoD_mv img,
+/*.autoD_content01 p.cnt01_brace img,*/
+.autoD_content02 p.cnt02_img01,
+.autoD_content03 p.cnt01_txt img,
+.autoD_content03 p.cnt01_bnr img {
+	width:100%;
+}
+/*.autoD_content01 p.cnt01_brace,*/
+.autoD_content03 p.cnt01_txt{
+	margin:0 auto;
+}
+/*.autoD_content01 p.cnt01_brace{
+	max-width:530px;
+}*/
+.autoD_content03 p.cnt01_txt{
+	max-width:442px;
+}
+.autoD_content03 p.cnt01_bnr img{
+	height:auto;
+	max-width:676px;
+}
+
+.autoD_mvArea p.autoD_mv,
+.autoD_content02 p.cnt02_img01{
+	text-align:center;
+}
+.autoD_content01 .cnt01_dtl{
+	position: static;
+}
+.autoD_content01 .cnt01_dtl p.cnt01_arw{
+	position: static;
+	text-align:center;
+}
+.autoD_content01 .cnt01_dtl p.cnt01_arw img{
+	max-width:80px;
+}
+.autoD_content01 .cnt01_dtl .cnt01_img001,
+.autoD_content01 .cnt01_dtl .cnt01_img002,
+.autoD_content01 .cnt01_dtl .cnt01_img003,
+.autoD_content02 p.cnt02_img01{
+	background: #fff875;
+	float:inherit;
+	margin:0 auto;
+	text-align:center;
+}
+.autoD_mvArea p.autoD_mvTxt,
+.autoD_content02 p.autoD_flow {
+	font-size:120%;
+	margin:30px 10px 25px;
+}
+.autoD_content01 .autoD_move{
+	margin: 30px 0;
+}
+
+
+/*---------------
+/english/personal/netbank/services/autoDeposit/index.html
+------------------*/
+.autoD_mvArea p.autoD_mvTxt_en {
+	margin:30px 10px 25px;
+}
+
+
+/*---------------
+/personal/netbank/services/autoDeposit/flow_japanpost.html
+------------------*/
+.flwJP_wrap{
+	margin:0 auto;
+	max-width:677px;
+}
+
+.flwJP_cnt{
+	margin:0 0 20px 0;
+}
+.flwJP_img{
+	margin: 10px 0 0 0;
+	max-width:676px;
+}
+.flwJP_img img{
+	width:100%;
+}
+
+
+/*---------------
+/personal/netbank/services/autoDeposit/flow.html
+------------------*/
+.ADflow_img img{
+	max-width:474px;
+}
+.ADflow_Gbtn,
+.ADflow_img img{
+	max-width:474px;
+	width:100%;
+}
+.ADflow_Gbtn{
+	padding: 0;
+}
+.ADflow_Gbtn p.com_btnGreen a span > span{
+	font-size:120%;
+	padding: 15px 10px;
+}
+
+
+
+/************************************************
+/corp/guide/
+************************************************/
+/*---------------
+/corp/guide/index.html
+------------------*/
+/*---------------
+columnListBlock
+------------------*/
+.secColumnList4Wrap01 .columnBlock01,
+.secColumnList4Wrap01 .columnBlock02,
+.secColumnList4Wrap01 .columnBlock03,
+.secColumnList4Wrap01 .columnBlock04 {
+	float:none;
+}
+
+.secColumnList4Wrap01 .columnBlock01,
+.secColumnList4Wrap01 .columnBlock02,
+.secColumnList4Wrap01 .columnBlock03,
+.secColumnList4Wrap01 .columnBlock04 {
+	width:auto;
+}
+
+.secColumnList4Wrap01 .columnImageRightBlock04 .linkBlock01 li {
+	margin-bottom:10px;	
+}
+
+.secColumnList4Wrap01 .columnImageRightBlock04 .linkBlock01 li.last-child {
+	margin-bottom:0;	
+}
+
+
+/************************************************
+/personal/consult/
+************************************************/
+/*---------------
+/personal/consult/tenpo/index.html
+------------------*/
+.tenpoListmenuAll {
+	padding:10px 5px;
+	max-width:100%;
+}
+.tenpoListmenuAll .tenpoListmenu {
+	margin:0;
+}
+.tenpoListmenuAll .tenpoListmenu ul li {
+	margin: 0 0 1px 0;
+	width:100%;
+}
+
+.tenpoListmenu li a,
+.tenpoListmenu li a span span.title {
+	font-size:110%;
+	height:auto;
+}
+
+.tenpoListmenu li a span span.title {
+	font-size:90%;
+	padding: 7px 19px 7px 7px;
+	width:85%;
+}
+
+.tenpoListmenuAll .todofukenBlock01 {
+	margin-top:15px;
+}
+.tenpoListmenuAll .todofukenTtlTokyo {
+	padding:18px 10px 18px 10px;
+}
+.tenpoListmenuAll .todofukenTtlKanagawa {
+	padding:18px 10px 18px 10px;
+}
+.tenpoListmenuAll .todofukenTtlSaitama {
+	padding:18px 10px 18px 10px;
+}
+.tenpoListmenuAll .todofukenTtlAichi {
+	padding:18px 10px 18px 10px;
+}
+.tenpoListmenuAll .todofukenBlock01Inner {
+	padding:10px;
+}
+.tenpoListmenuAll .todofukenBlock01InnerTokyo {
+	padding:10px 10px 12px 10px;
+}
+.tenpoListmenuAll .todofukenBlock01InnerKanagawa {
+	padding:10px 10px 12px 10px;
+}
+.tenpoListmenuAll .todofukenBlock01InnerSaitama {
+	padding:10px 10px 12px 10px;
+}
+.tenpoListmenuAll .todofukenBlock01InnerAichi {
+	padding:10px 10px 12px 10px;
+}
+
+.tenpoListmenuAll .tenpoTtl {
+	font-size:120%;
+	min-height:25px;
+	background:url(/personal/consult/tenpo/shared/img/icon_store_001.png) no-repeat left top;
+	background-size:21px 21px;
+	padding-left:25px;
+	margin-bottom:5px;
+}
+.tenpoListmenuAll .todofukenBlock01 .tenpoImg {
+	padding-right:0;
+	text-align:left;
+}
+.tenpoListmenuAll .todofukenBlock01 .tenpoImg img {
+	height:auto;
+	max-width:100%;
+}
+.tenpoListmenuAll .tenpoInfo .fLarge {
+	font-size:110% !important;
+}
+.tenpoListmenuAll .tenpoInfo .access {
+	padding:10px;
+}
+.tenpoListmenuAll .tenpoInfo .time {
+	background:url(/personal/consult/tenpo/shared/img/icon_clock_001.png) no-repeat left 4px;
+	background-size:18px 18px;
+	padding-left:23px;
+}
+.tenpoListmenuAll .tenpoInfo .freecall {
+	background-size:20px 16px;
+	margin-top:5px;
+}
+.tenpoListmenuAll .tenpoInfo .telNo {
+	font-size:160% !important;
+}
+
+/*---------------
+/personal/consult/tenpo/ (eachStores)
+------------------*/
+.accessTenpo .columnImageLeftBlock01 div.image img{
+	height:auto;
+	max-width:100%;
+}
+
+.accessTenpo div.columnImageLeftBlock01 div.image{
+	float:none;
+}
+.accessTenpo div.columnImageLeftBlock01 div.image p{
+	margin-bottom:10px;
+}
+.accessTenpo .columnImageLeftBlock01 div.image p.caption{
+	width:auto;
+}
+.accessTenpo div.columnImageLeftBlock01 div.text{
+	padding:0;
+}
+
+.accessTenpo .columnImageLeftBlock01 div.text ul li.imageList{
+	padding:10px 0;
+}
+
+
+/*---------------
+/personal/consult/homeloan.html
+------------------*/
+.homeloanColumnImage3Wrap01 .columnBlock01,
+.homeloanColumnImage3Wrap01 .columnBlock02,
+.homeloanColumnImage3Wrap01 .columnBlock03 {
+	float:none;
+	width:auto;
+	margin:0 0 10px 0;
+}
+
+.homeloanColumnImage3Wrap01 .image p {
+	margin-bottom:0;
+}	
+
+
+/************************************************
+/personal/account/application/
+************************************************/
+/*---------------
+/personal/account/application/kaisetsu.html
+------------------*/
+.kaisetsuColumn2Wrap01,
+.kaisetsuColumn2Wrap02 {
+	width:100%;
+	margin:0 auto 10px;
+}
+
+
+.kaisetsuColumn2Wrap01 .titleWrap .columnBlock01 {
+	width:45%;
+	float:left;
+}
+
+.kaisetsuColumn2Wrap01 .titleWrap .columnBlock02 {
+	width:45%;
+	float:right;
+	background-size:40px 30px;
+	-webkit-background-size:40px 30px;
+	-ms-background-size:40px 30px;
+	-moz-background-size:40px 30px;
+	text-align:left;
+}
+
+.kaisetsuColumn2Wrap01 .titleWrap .columnBlock01 h4,
+.kaisetsuColumn2Wrap01 .titleWrap .columnBlock02 h4 {
+	background:#5d5d5d;
+}
+
+.kaisetsuColumn2Wrap01 .contentWrap .columnBlock01 {
+	width:45%;
+	float:left;
+	background:url(/personal/account/application/shared/img/sp_kaisetsu_img_004.gif) repeat-y center top;
+	background-size:40px 30px;
+	-webkit-background-size:40px 30px;
+	-ms-background-size:40px 30px;
+	-moz-background-size:40px 30px;
+}
+
+.kaisetsuColumn2Wrap01 .contentWrap .columnBlock02 {
+	width:45%;
+	float:right;
+	border:solid 2px #c1c1c1;
+	border-top:none;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+.kaisetsuColumn2Wrap01 .contentWrap .columnBlock02 dl {
+	border:none;	
+}
+
+.kaisetsuColumn2Wrap01 .contentWrap .columnBlock02 dl dt {
+	padding:10px;
+	font-weight:bold;
+	background:url(/personal/account/application/shared/img/sp_kaisetsu_line_001.gif) repeat-x left bottom;
+	background-size:3px 1px;
+	-webkit-background-size:3px 1px;
+	-ms-background-size:3px 1px;
+	-moz-background-size:3px 1px;
+}
+
+.kaisetsuColumn2Wrap01 .contentWrap .columnBlock02 dl dd {
+	padding:10px;	
+}
+
+.kaisetsu_zoomLink a {
+	background:url(/personal/account/application/shared/img/sp_kaisetsu_ico_001.gif) no-repeat left 50%;
+	background-size:13px 12px;
+	-webkit-background-size:13px 12px;
+	-ms-background-size:13px 12px;
+	-moz-background-size:13px 12px;
+	display:inline-block;
+	padding-left:20px;
+}
+
+.tabSwitchNavBlock {
+	background:url(/personal/account/application/shared/img/sp_kaisetsu_bg_001.gif) repeat-x left bottom #fff;
+	background-size:2px 40px;
+	-webkit-background-size:2px 40px;
+	-ms-background-size:2px 40px;
+	-moz-background-size:2px 40px;
+	display:block;
+	padding-bottom:1px;
+}
+
+.tabSwitchNavBlock ul {
+	background:url(/personal/account/application/shared/img/sp_kaisetsu_line_002.gif) no-repeat center bottom;
+	background-size:1px 30px;
+	-webkit-background-size:1px 30px;
+	-ms-background-size:1px 30px;
+	-moz-background-size:1px 30px;
+}
+
+.tabSwitchNavBlock ul li {
+	width:50%;
+	float:left;
+	text-align:center;
+}
+
+.tabSwitchNavBlock a {
+	display:inline-block;
+	padding:10px 0;
+	line-height:120%;
+	font-weight:bold;
+	color:#0039dc;
+	text-align:center;
+	text-decoration:none;
+}
+
+.tabSwitchNavBlock a.active {
+	padding:10px 0 6px 0;
+	border-bottom:4px solid #008833;
+	color:#000;
+	text-decoration:none;
+}
+
+.tabPanel01,
+.tabPanel02, .tabPanel03 {
+	padding:15px 8px 0;	
+}
+
+.tabPanel02 {
+	display:none;	
+}
+
+.tabPanel01 p.image,
+.tabPanel02 p.image,
+.tabPanel03 p.image {
+	float:left;
+}
+
+.tabPanel01 p.read,
+.tabPanel02 p.read,
+.tabPanel03 p.read {
+	padding-left:120px;	
+}
+
+
+/************************************************
+/intlcard/
+************************************************/
+/*---------------
+/intlcard/index.html
+------------------*/
+.intlcard_cardlist ul {
+	margin-bottom:5px;
+}
+.intlcard_cardlist ul li {
+	text-align: center;
+	vertical-align: middle;
+	width:53px;
+	margin:0;
+}
+.intlcard_cardlist ul li img {
+	width:49px;
+}
+
+
+/************************************************
+/business/
+************************************************/
+/*---------------
+/business/service_other/realtimetransfer.html
+------------------*/
+.columnImageLeftBlock01 .rttBnrTxt{
+padding-left: 0px !important;}

@@ -1,0 +1,10 @@
+@import url("reset.css");
+@import url("template.css");
+@import url("component.css");
+@import url("detail.css");
+@import url("megamenu.css");
+
+@import url("/shared/modal/jquery.fancybox-1.3.4.css");
+@import url("modal.css");
+
+body#top{display:block;}

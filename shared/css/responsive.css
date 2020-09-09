@@ -1250,7 +1250,6 @@ BREADCUMBS
 	background-color: #F5F5F5;
 }
 ::-webkit-scrollbar {
-    -webkit-appearance: none;
     width: 7px;
     height: 7px;
     -webkit-overflow-scrolling: auto;
@@ -1275,7 +1274,6 @@ BREADCUMBS
     background-color: #F5F5F5; 
 }
 ::-webkit-scrollbar {
-   	 		-webkit-appearance: none;
    width: 7px;
     height: 7px;
     -webkit-overflow-scrolling: auto;

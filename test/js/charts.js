@@ -37,34 +37,44 @@ const lineChart = new Chart(document.getElementById('canvas-1'), {
     ]
   },
   options: {
-    responsive: true
+    responsive: true,
+    legend: {
+      display: false,
+    },
   }
 })
 
 // eslint-disable-next-line no-unused-vars
 const barChart = new Chart(document.getElementById('canvas-2'), {
-  type: 'bar',
+  type: 'horizontalBar',
   data: {
-    labels : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels : ['Coding Lv1', 'Coding Lv2', 'Coding Lv3', 'Coding Lv4', 'Coding Lv5'],
     datasets : [
       {
         backgroundColor : 'rgba(220, 220, 220, 0.5)',
         borderColor : 'rgba(220, 220, 220, 0.8)',
         highlightFill: 'rgba(220, 220, 220, 0.75)',
         highlightStroke: 'rgba(220, 220, 220, 1)',
-        data : [random(), random(), random(), random(), random(), random(), random()]
+        data : [random(), random(), random(), random(), random()],
+        label : 'Plan',
+        borderWidth: 1,
+        offset:false
       },
       {
         backgroundColor : 'rgba(151, 187, 205, 0.5)',
         borderColor : 'rgba(151, 187, 205, 0.8)',
         highlightFill : 'rgba(151, 187, 205, 0.75)',
         highlightStroke : 'rgba(151, 187, 205, 1)',
-        data : [random(), random(), random(), random(), random(), random(), random()]
+        data : [random(), random(), random(), random(), random()],
+        label : 'Available',
+        borderWidth: 1,
+        offset:false
       }
     ]
   },
   options: {
-    responsive: true
+    responsive: true,
+    maintainAspectRatio: false
   }
 })
 
@@ -80,7 +90,11 @@ const doughnutChart = new Chart(document.getElementById('canvas-3'), {
     }]
   },
   options: {
-    responsive: true
+    responsive: true,
+    legend: {
+      display: false,
+    },
+    cutoutPercentage:30
   }
 })
 
@@ -113,7 +127,10 @@ const radarChart = new Chart(document.getElementById('canvas-4'), {
     ]
   },
   options: {
-    responsive: true
+    responsive: true,
+    legend: {
+      display: false,
+    },
   }
 })
 
@@ -129,21 +146,24 @@ const pieChart = new Chart(document.getElementById('canvas-5'), {
     }]
   },
   options: {
-    responsive: true
+    responsive: true,
+    legend: {
+      display: false,
+    },
   }
 })
 
 // eslint-disable-next-line no-unused-vars
-const polarAreaChart = new Chart(document.getElementById('canvas-6'), {
-  type: 'polarArea',
-  data: {
-    labels: ['Red', 'Green', 'Yellow', 'Grey', 'Blue'],
-    datasets: [{
-      data: [11, 16, 7, 3, 14],
-      backgroundColor: ['#FF6384', '#4BC0C0', '#FFCE56', '#E7E9ED', '#36A2EB']
-    }]
-  },
-  options: {
-    responsive: true
-  }
-})
+// const polarAreaChart = new Chart(document.getElementById('canvas-6'), {
+//   type: 'polarArea',
+//   data: {
+//     labels: ['Red', 'Green', 'Yellow', 'Grey', 'Blue'],
+//     datasets: [{
+//       data: [11, 16, 7, 3, 14],
+//       backgroundColor: ['#FF6384', '#4BC0C0', '#FFCE56', '#E7E9ED', '#36A2EB']
+//     }]
+//   },
+//   options: {
+//     responsive: true
+//   }
+// })

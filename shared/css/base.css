@@ -1,0 +1,224 @@
+@charset "Shift_JIS";
+/*------------------------------------------------------------------------------------------------
+creation date 2009.9.18
+http://www.sevenbank.co.jp/
+Copyright (C) Seven Bank,Ltd. All Rights Reserved.
+------------------------------------------------------------------------------------------------*/
+/*-------------------------------
+css reset
+--------------------------------*/
+body,
+div#header div,div#footer div,div#main div,div#sub div,
+div#header dl,div#footer dl,div#main dl,div#sub dl,dl#sNav,
+div#header dt,div#footer dt,div#main dt,div#sub dt,dl#sNav dt,
+div#header dd,div#footer dd,div#main dd,div#sub dd,dl#sNav dd,
+div#header ul,div#footer ul,div#main ul,div#sub ul,dl#sNav ul,
+div#header li,div#footer li,div#main li,div#sub li,dl#sNav li,
+ol,
+h1,h2,h3,h4,h5,h6,
+form,fieldset,input,textarea,
+div#header p,div#footer p,div#main p,div#sub p,
+blockquote,
+div#main th,div#sub th,
+div#main td,div#sub td{ 
+	margin:0;
+	padding:0;
+	}
+
+.popup ul,
+.popup li{
+	position:relative;
+	}
+
+address,caption,
+div#main th,div#sub th{
+	font-style:normal;
+	font-weight:normal;
+	}
+
+div#main table,div#sub table{border-collapse:collapse;}
+div#main fieldset,div#sub fieldset,
+div#header img,div#footer img,div#main img,div#sub img,dl#sNav img{
+	border:0;
+	vertical-align:bottom;
+	}
+div#main ol,div#sub ol,
+div#header ul,div#footer ul,div#main ul,div#sub ul,dl#sNav ul{list-style:none;}
+caption,
+div#main th,div#sub th{
+	text-align:left;
+	vertical-align:top;
+	}
+
+/*-------------------------------
+font style
+--------------------------------*/
+body {
+	font:12px "MS P Gothic", "‚l‚r ‚oƒSƒVƒbƒN", "Lucida Grande", "Hiragino Kaku Gothic Pro", "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Osaka" ,sans-serif;
+	*font-size: 75%;/* for IE */
+	line-height:1.5;
+	vertical-align:baseline;
+	color:#333333;
+	}
+
+/*-------------------------------
+a
+--------------------------------*/	
+a:link{
+	text-decoration:underline;
+	color:#336699;
+	}
+
+a:visited{
+	text-decoration:underline;
+	}	
+
+a:hover,
+a:active{
+	text-decoration:none;
+	color:#6699cc;
+	}
+
+a{
+	padding-left:13px;
+	background:url(../image/ico/ico_arw.gif) no-repeat left 3px;
+	}
+
+a.cir{
+	padding:0 0 2px 15px;
+	background:url(../image/ico/ico_arw_cir.gif) no-repeat left top;
+	}
+
+a.anc{
+	padding-left:13px;
+	background:url(../image/ico/ico_arw_anchor.gif) no-repeat left 2px;
+	}
+
+a.cirAnc{
+	padding:0 0 2px 15px;
+	background:url(../image/ico/ico_arw_cir_anchor.gif) no-repeat left top;
+	}
+
+a.none{ /*only the partial point*/
+	padding-left:0;
+	background:none;
+	}
+a.linkicon_none{ /*only the partial point*/
+	padding-left:0;
+	background:none;
+	}
+
+span.innerLink {
+	line-height:120%;
+	font-weight:bold;
+}
+	
+span.innerLink a {
+    background:url(/shared/img/cmn_ico_003.png) no-repeat scroll right center;
+    display:inline-block;
+    padding-right:15px;
+    word-break:break-all;
+	font-size:100%;
+	/zoom:1;
+	/display:inline;
+}
+
+/*-------------------------------
+body
+--------------------------------*/
+html,body{
+	height:100%;
+	}
+
+/*-------------------------------
+inline element
+--------------------------------*/
+strong{
+	color:#CC0000;
+	}	
+
+em{
+	font-style:normal;
+	font-weight:bold;
+	}
+
+.small{
+	font-size:92%;
+	}
+
+.colorA{
+	color:#CC0000;
+	}
+
+.colorB{
+	color:#FF6600;
+	}
+
+.colorC{
+	color:#006024;
+	}
+
+div#wrapper img.window{
+	margin-left:5px;
+	vertical-align:middle;
+	}
+
+/*-------------------------------
+toTop
+--------------------------------*/
+div.toTop p{
+	margin:30px 0;
+	padding:0;
+	text-align:right;
+	}	
+
+div.toTop a{
+	padding-left:17px;
+	background:url(../image/ico/ico_pagetop.gif) no-repeat left top;
+	font-size:92%;
+	}
+
+/*-------------------------------
+hr
+--------------------------------*/	
+hr{
+	display:none;
+	}
+
+/*-------------------------------
+hidden module
+--------------------------------*/	
+.skipNav,
+#anchorPagetop,
+#contentsStart,
+#menuStart{
+	display:none;
+	}
+
+/*-------------------------------
+clear
+--------------------------------*/
+.clear{
+	clear:both;
+	}
+
+.clearfix:after {  
+	content: ".";   
+	display: block;   
+	height: 0;   
+	clear: both;   
+	visibility: hidden;  
+	}
+
+.clearfix {  
+	display: inline-block;  
+	min-height: 1%;  
+	}
+
+/* Hides from IE-mac \*/  
+* html .clearfix {  
+	height: 1%;  
+	}  
+	.clearfix {  
+	display: block;  
+	}

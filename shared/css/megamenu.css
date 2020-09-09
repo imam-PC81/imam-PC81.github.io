@@ -1,0 +1,168 @@
+/************************************************
+ res_megamenu
+************************************************/
+
+/*---------------
+#spMenuArea
+------------------*/
+#spMenuArea {
+	display: none;
+}
+#megaMenuArea{
+	width: 100%;
+	background-color: #01a32b !important;
+	font-family: "メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック",Osaka,sans-serif;
+	position: relative;
+	z-index: 1000;
+	height: 40px;
+}
+#megaMenuArea > ul{
+	width: 910px;
+	margin: 0 auto !important;
+}
+#megaMenuArea > ul > li{
+	float: left;
+}
+#megaMenuArea > ul > li .menuWrap{
+	display: none;
+	width: 100% !important;
+	min-width: 910px !important;;
+	background: url('/shared/img/mega_global_menuwrap_bg.png') 0 50% repeat;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	box-shadow: 0px 7px 3px -3px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0px 7px 3px -3px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 7px 3px -3px rgba(0,0,0,0.15);
+}
+/*#megaMenuArea > ul > li.menu0 .menuWrap{
+	display: block;
+}*/
+#megaMenuArea > ul > li .menuWrap .menuInner{
+	width: 910px;
+	margin: 0 auto;
+	/*padding: 30px 0;*/
+	background-image: url('/shared/img/mega_global_inner_active.png') ;
+	background-repeat: no-repeat;
+}
+#megaMenuArea > ul > li.menu0 .menuWrap .menuInner{
+	background-position: 63px 0;
+}
+#megaMenuArea > ul > li.menu1 .menuWrap .menuInner{
+	background-position: 229px 0;
+}
+#megaMenuArea > ul > li.menu2 .menuWrap .menuInner{
+	background-position: 462px 0;
+}
+#megaMenuArea > ul > li.menu3 .menuWrap .menuInner{
+	background-position: 651px 0;
+}
+#megaMenuArea > ul > li.menu4 .menuWrap .menuInner{
+	background-position: 813px 0;
+}
+
+/* for category IR */
+#megaMenuArea.typeIr > ul > li.menu0 .menuWrap .menuInner{
+	background-position: 63px 0;
+}
+#megaMenuArea.typeIr > ul > li.menu1 .menuWrap .menuInner{
+	background-position: 190px 0;
+}
+#megaMenuArea.typeIr > ul > li.menu2 .menuWrap .menuInner{
+	background-position: 325px 0;
+}
+#megaMenuArea.typeIr > ul > li.menu3 .menuWrap .menuInner{
+	background-position: 465px 0;
+}
+#megaMenuArea.typeIr > ul > li.menu4 .menuWrap .menuInner{
+	background-position: 600px 0;
+}
+
+
+/* .linkListArea 20180806追加・更新*/
+#megaMenuArea .linkListArea,
+#megaMenuArea .linkListArea3R{
+	padding: 0 20px ;
+	float: left;
+	margin: 30px 0;
+}
+#megaMenuArea .linkListArea a,
+#megaMenuArea .linkListArea3R a{
+	color: #01a32b !important;
+	font-weight: bold;
+	font-size: 108%;
+}
+#megaMenuArea .linkListArea p,
+#megaMenuArea .linkListArea3R p{
+	font-size: 124%;
+	margin-bottom: 17px;
+	background: url('/shared/img/mega_global_arrow01.png') left 50% no-repeat;
+	padding: 0 0 0 25px;
+	min-height: 18px;
+}
+#megaMenuArea .linkListArea ul,
+#megaMenuArea .linkListArea3R ul{
+	float: left;
+}
+#megaMenuArea .linkListArea ul + ul,
+#megaMenuArea .linkListArea3R ul + ul + ul{
+	width: 267px;
+}
+#megaMenuArea .linkListArea ul li,
+#megaMenuArea .linkListArea3R ul li{
+	background: url('/shared/img/mega_global_arrow02.png') left 50% no-repeat;
+	padding: 0 0 0 18px;
+}
+#megaMenuArea .linkListArea ul li a[target='_blank'],
+#megaMenuArea .linkListArea3R ul li a[target='_blank']{
+	background: url('/shared/img/mega_global_balnk.png') right 50% no-repeat;
+	padding: 0 20px 0 0;
+}
+#megaMenuArea .linkListArea ul li span,
+#megaMenuArea .linkListArea3R ul li span{
+	display: inline-block;
+	padding: 0 0 0 5px;
+	vertical-align:bottom;
+}
+#megaMenuArea .linkListArea ul li + li,
+#megaMenuArea .linkListArea3R ul li + li{
+	margin-top: 9px;
+}
+
+#megaMenuArea .linkListArea{
+	width: 586px;
+}
+#megaMenuArea .linkListArea ul{
+	width: 319px;
+}
+
+#megaMenuArea .linkListArea3R{
+	width: 850px;
+}
+#megaMenuArea .linkListArea3R ul{
+	width: 267px;
+}
+#megaMenuArea .linkListArea3R ul + ul{
+	width: 316px;
+}
+
+
+/* .bnrArea */
+.bnrArea{
+	width: 213px !important;
+	margin: 30px 0 !important;
+	float: left;
+	border-left: 1px solid #b0e0b3 !important;
+	padding: 0 29px 0 40px !important;
+}
+.bnrArea ul li{
+	margin: 0 0 20px !important;
+}
+.bnrArea ul li a{
+	display: block;
+	background-color: #FFF;
+}
+.bnrArea ul li a:hover img{
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}

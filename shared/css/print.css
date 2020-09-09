@@ -1,0 +1,88 @@
+@charset "Shift_JIS";
+/*------------------------------------------------------------------------------------------------
+creation date 2009.8.19
+http://www.sevenbank.co.jp/
+Copyright (C) Seven Bank,Ltd. All Rights Reserved.
+------------------------------------------------------------------------------------------------*/
+/*-------------------------------
+all page
+--------------------------------*/
+*html body{
+	zoom:70%;
+	}
+
+div#container{
+	min-height:0;
+	height:auto !important;
+	height:0;
+	}	
+
+div#header dl#gNav ul li span{
+	position:absolute;
+	overflow:hidden;
+	width:auto;
+	height:auto;
+	}
+
+*html div#sub div.localNav ul.localNavH li ul li ul li {
+	display: block;
+	width:189px;
+	margin-left:0;
+	padding-left:20px;
+	padding-bottom:1px;
+	background:url(../image/dot_999_wl.gif) repeat-x left bottom;
+	}
+
+*html div#sub div.localNav ul.localNavH li ul li ul li:last-child,
+*html div#sub div.localNav ul.localNavH li ul li ul li.lastChild{
+	padding: 0 0 0 20px;
+	background-image:none;
+	}
+
+*html div#sub div.localNav ul.localNavH li ul li ul li.active{
+	width:189px;
+	background:#888888 url(../image/dot_999_wl.gif) repeat-x left bottom;
+	}
+
+*html body.popup div#container{
+	overflow:visible;
+	}
+
+*:first-child+html div#main .modCol4g1 .colR,
+*:first-child+html div#main .modCol5g1 .colR{
+	clear: right;
+}
+
+*html div#main .modCol4g1 .colR,
+*html div#main .modCol5g1 .colR{
+	clear: right;
+}
+
+
+/*-------------------------------
+index.html
+--------------------------------*/
+div#main div.sNav div.atm div.box dl dt.lastChild{
+	background:none;
+	border-top:#999999 1px dotted;
+	}
+
+div#main div.sNav div.category div.service div.box dl,
+div#main div.sNav div.category div.service dl.others dt{
+	overflow:visible;
+	background:none;
+	border-bottom:#999999 1px dotted;
+	}
+
+div#main dl.warning dt,
+div#main dl.warning dd,	
+div#main div.topics,
+div#main div.topics dl dt{
+	background:none;
+	border-bottom:#666666 1px dotted;
+	}	
+
+div#main div.topics dl dd dl dt {
+	border-bottom:none;
+	}
+		

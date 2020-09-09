@@ -1,0 +1,1646 @@
+@charset "Shift_JIS";
+
+/*------------------------------------------------------------------------------------------------
+
+creation date 2009.9.15
+
+http://www.sevenbank.co.jp/
+
+Copyright (C) Seven Bank,Ltd. All Rights Reserved.
+
+------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------
+
+margin
+
+--------------------------------*/
+
+#headerSpMenu #localNaviArea #localNaviAreaInner li {
+	display: none;
+}
+
+div#main .section,
+ .section {
+	margin-bottom:25px;
+}
+
+div#main .block,
+ div#main .column,
+ div#sub .column,
+ div#sub .block,
+ .block,
+ .column {
+	margin-top:10px;
+	padding-bottom:5px;
+}
+
+div#main .index,
+ .index {
+	margin-top:5px;
+	padding-bottom:5px;
+}
+
+div#main .mgL10 {
+    margin-left: 10px;
+}
+
+/*-------------------------------
+
+2011-12-14 
+
+--------------------------------*/
+#wrapper .section dl.column dd.txtindent{padding-left:16px;}
+
+/*-------------------------------
+
+hX
+
+--------------------------------*/
+
+div#main h2 {
+	min-height:20px;
+	height:auto !important;
+	height:20px;
+	margin:20px 0 10px;
+	padding:0 0 0 11px;
+	background:url(../image/bg_h2.gif) no-repeat left top;
+	border-bottom:#CC0000 2px solid;
+	font-size:134%;
+	color:#CC0000;
+}
+
+div#main h1.img,
+ div#main h2.img {
+	padding:0;
+	background:none;
+	border:none;
+	font-size:0;
+}
+
+div#main h3 {
+	margin:20px 0 10px;
+	padding:0 0 0 3px;
+	border-bottom:#333333 2px solid;
+	font-size:117%;
+}
+
+div#main h4 {
+	min-height:19px;
+	height:auto !important;
+	height:19px;
+	margin:20px 0 10px;
+	font-size:117%;
+}
+div#main h4.udln{
+	text-decoration:underline;
+	}
+	
+div#main h4.positionC {
+	font-weight:bold;
+	font-size:117%;
+}
+
+div#main div.hLink {
+	position:relative;
+	width:100%;
+	margin:20px 0 10px;
+}
+
+div#main div.hLink p {
+	position:absolute;
+	right:0;
+	bottom:6px;
+	line-height:1.1;
+}
+
+div#main div.hLink h1,
+ div#main div.hLink h2,
+ div#main div.hLink h3 {
+	margin:0;
+}
+
+/*-------------------------------
+
+.pdf
+
+--------------------------------*/
+
+div#main .pdf {
+	line-height:2;
+}
+
+div#main .pdf li {
+	layout-grid-line:5px;/*for IE6*/
+}
+
+/*-------------------------------
+
+.pauseLine
+
+--------------------------------*/
+
+div#main .pauseLine {
+	overflow:hidden;
+	zoom:1;
+}
+
+div#main .pauseLine li {
+	float:left;
+	padding:0 5px 0 7px;
+	border-right:#333333 1px solid;
+	line-height:1.1;
+}
+
+div#main .pauseLine li a {
+	padding-left:0;
+	background:none;
+}
+
+div#main .pauseLine li a.anc {
+	padding-left:13px;
+	background:url(../image/ico/ico_arw_anchor.gif) no-repeat left 2px;
+}
+
+div#main .pauseLine li:last-child,
+ div#main .pauseLine li.lastChild {
+	padding-right:0;
+	border-right:none;
+}
+
+/*-------------------------------
+
+.indent
+
+--------------------------------*/
+
+div#main .indent {
+	padding-left:1em;
+	text-indent:-1em;
+}
+
+/*-------------------------------
+
+.btnLiquid
+
+--------------------------------*/
+
+div#main .btnLiquid {
+	max-width: 240px;
+	min-width: 100px;
+	margin:10px 0 0;
+	background:#F8F8F8 url(../image/bg_btn_ml.gif) repeat-y left;
+	font-weight:bold;
+}
+
+div#main .btnLiquid li {
+	background:url(../image/bg_btn_mr.gif) repeat-y right;
+}
+
+div#main .btnLiquid a {
+	padding-left:0;
+	background:none;
+}
+
+div#main .btnLiquid .btnLiquidTl {
+	display:block;
+	background:url(../image/bg_btn_tl.gif) no-repeat left top;
+	font-size: 100.01%;
+}
+
+div#main .btnLiquid .btnLiquidTr {
+	display:block;
+	background:url(../image/bg_btn_tr.gif) no-repeat right top;
+	font-size: 100.01%;
+}
+
+div#main .btnLiquid .btnLiquidBl {
+	display:block;
+	padding-left:10px;
+	background:url(../image/bg_btn_bl.gif) no-repeat left bottom;
+	font-size: 100.01%;
+}
+
+div#main .btnLiquid .btnLiquidBr {
+	display:block;
+	padding-bottom:6px;
+	background:url(../image/bg_btn_br.gif) no-repeat right bottom;
+	font-size: 100.01%;
+}
+
+div#main .btnLiquid span span span span span {
+	display:block;
+	padding:10px 5px 5px 25px;
+	background:url(../image/ico/ico_arw_cir.gif) no-repeat left 11px;
+	font-size: 100.01%;
+}
+
+html>body div#main .btnLiquid span span span span span {
+	text-decoration:underline;
+}
+
+div#main .btnLiquid span span span span span:hover {
+	text-decoration:none;
+}
+
+/*-------------------------------
+
+.page
+
+--------------------------------*/
+
+div#main ul.page {
+	overflow:hidden;
+	zoom:1;
+}
+
+div#main ul.page li {
+	float:left;
+}
+
+div#main ul.page li.next {
+	float:right;
+}
+
+div#main ul.page li a {
+	padding-left:15px;
+	background:url(../image/ico/ico_arw_cir_b.gif) no-repeat left center;
+}
+
+div#main ul.page li.next a {
+	padding-right:15px;
+	background:url(../image/ico/ico_arw_cir.gif) no-repeat right center;
+}
+
+/*-------------------------------
+
+.hedge
+
+--------------------------------*/
+
+div#main .hedge li {
+	margin:0 0 2px 1em;
+	text-indent:-1em;
+}
+
+/*.hedgeNum*/	
+
+div#main .hedgeNum li {
+	margin:0 0 2px 1.8em;
+	text-indent:-1.8em;
+}
+
+/*.hedgeNestNum*/	
+
+div#main .hedgeNestNum li {
+	margin:0 0 2px 1em;
+	text-indent:-1em;
+}
+
+div#main .hedgeNestNum li ol li {
+	list-style:decimal inside;
+}
+
+/*.hedgeNestCi*/		
+
+div#main .hedgeNestCir li {
+	margin:0 0 2px 1em;
+	text-indent:-1em;
+}
+
+div#main .hedgeNestCir li ul li {
+	list-style:disc inside;
+}
+
+/*.list .hedge*/		
+
+ul.listCir li .hedge li {
+	padding-left:0;
+	background:none;
+	line-height:1.5;
+}
+
+div#main ol.listNum li .hedge li {
+	margin:0 0 2px 0;
+	padding-left:1em;
+	text-indent:-1em;
+ *text-indent:-2.3em;
+	list-style:none inside;
+	line-height:1.5;
+}
+
+/*-------------------------------
+
+.list
+
+--------------------------------*/
+
+div#main ul.list li {
+	line-height:2;
+	layout-grid-line:5px;/*for IE6*/
+}
+
+div#main ul.listCir li,
+ ul.listCir li {
+	padding-left:12px;
+	background:url(../image/ico/ico_circle.gif) no-repeat left 8px;
+	line-height:2;
+	layout-grid-line:5px;/*for IE6*/
+}
+div#main ul.listCir02 li {
+	padding-left:12px;
+	background:url(../image/ico/ico_circle.gif) no-repeat left 5px;
+	line-height:1.4;
+	layout-grid-line:5px;/*for IE6*/
+	margin:4px 0 5px;
+}
+
+div#main ol.listNum li {
+	padding-left:1.3em;
+	background:none;
+	list-style:decimal inside;
+	line-height:2;
+	text-indent:-1.3em;
+}
+
+div#main dl.listDl dd {
+	margin-bottom:7px;
+}
+
+div#main ol.listNumDl li {
+	margin-bottom:7px;
+	list-style:decimal inside;
+}
+
+div#main ol.listNumDl li ul li {
+	margin-bottom:0;
+}
+
+div#main ol.listNumDl li dl {
+	margin-top:-1.5em;
+ *margin-top:-1.3em;
+	padding-left:1em;
+}
+
+div#main ol.listNumDl li dl dd dl {
+	margin-top:0;
+	padding-left:0;
+}
+
+div#main ol.listNum li ul.listCir,
+ div#main ol.listNumDl li ul.listCir {
+	line-height:0;
+}
+
+div#main ol.listNum li ul.listCir li {
+	padding-left:24px;
+	background:url(../image/ico/ico_circle.gif) no-repeat left 8px;
+	list-style:none;
+}
+
+div#main ol.listNumDl li ul.listCir li {
+	padding-left:12px;
+	background:url(../image/ico/ico_circle.gif) no-repeat left 8px;
+	list-style:none outside;
+}
+
+div#main ul li ul.indent {
+	text-indent:1em;
+	padding-left:0;
+}
+
+div#main ul li ul li.indent {
+	padding-left:2em;
+}
+
+/*-------------------------------
+
+.modBox
+
+--------------------------------*/
+
+div#main .modBoxImportant {
+	width:655px;
+	padding:7px;
+	background:#FFFBDB;
+	border:#FFCC00 3px solid;
+	color:#CC0000;
+}
+
+div#main .modBoxAttention {
+	width:655px;
+	padding:8px;
+	border:#CC0000 2px solid;
+	color:#CC0000;
+}
+
+div#main .modBoxWord1 {
+	width:655px;
+	padding:10px;
+	background:#F0ECE0;
+}
+
+div#main .modBoxWord2 {
+	width:655px;
+	padding:9px;
+	border:#cccccc 1px solid;
+}
+
+/*dl.modBoxSub*/
+
+div#sub dl.modBoxSub {
+	width:211px;
+	margin:10px 0;
+	background:none;
+	border:#cccccc 1px solid;
+}
+
+div#sub dl.modBoxSub_2px {
+	width:209px;
+	margin:10px 0;
+	background:none;
+	border:#cccccc 2px solid;
+}
+
+div#sub dl.modBoxSub dt {
+	padding:5px;
+	background:#F0ECE0;
+}
+
+div#sub dl.modBoxSub_2px dt {
+	padding:8px 5px 10px;
+	background:#F0ECE0;
+}
+
+div#sub dl.modBoxSub dd {
+	margin:0;
+	padding:6px 6px 3px;
+}
+
+div#sub dl.modBoxSub dd dl,
+ div#sub dl.modBoxSub dd dl dt,
+ div#sub dl.modBoxSub dd dl dd {
+	margin:0;
+	padding:0;
+	background:none;
+	border:none;
+}
+
+div#sub dl.modBoxSub dd dl dt {
+	line-height:1.5;
+	font-size:100%;
+	font-weight:bold;
+}
+
+div#sub dl.modBoxSub dd dl dd {
+	padding-left:13px;
+}
+
+div#sub dl#modBoxSubContact dd dl dd {
+	padding-left:0;
+}
+
+/*dl.modBoxSubLink*/
+
+div#sub dl.modBoxSubLink {
+	overflow:hidden;
+	margin-bottom:10px;
+	background:none;
+	border:#CCCCCC 1px solid;
+}
+
+div#sub dl.modBoxSubLink dd {
+	margin:3px;
+	text-align:center;
+}
+
+/*dl.modBoxSubInfo*/
+
+ div#sub dl.modBoxSubInfo {
+	padding:0 5px 0 5px;
+}
+
+div#sub dl.modBoxSubInfo,
+ div#sub dl.modBoxSubInfo dd dl {
+	background:#F0ECE0;
+	border:none;
+}
+
+ div#sub dl.modBoxSubInfo dd dl {
+	margin-bottom:0;
+}
+
+ div#sub dl.modBoxSubInfo dt {
+	margin-bottom:8px;
+	padding-top:4px;
+}
+
+div#sub dl.modBoxSubInfo dd {
+	zoom:1;
+}
+
+/*-------------------------------
+dl.importantContents
+--------------------------------*/
+div#main dl.importantContents {
+	width:655px;
+	margin-bottom:10px;
+	padding:7px;
+	background:#FFFBDB;
+	border:#FFCC00 3px solid;
+	margin-top:10px;
+}
+div#main dl.importantContents dt {
+	float:left;
+	clear:both;
+	background:url(../image/ico/ico_warning_b.gif) no-repeat left 2px;
+	padding-left:19px;
+}
+div#main dl.importantContents dd {
+	font-weight:bold;
+	color:#CC0000;
+}
+div#main dl.importantContents dd a {
+	padding-left:0;
+	background:none;
+	color:#CC0000;
+}
+
+
+/*-------------------------------
+
+.modCol
+
+--------------------------------*/
+
+div#main .modCol1g1 {
+	width:675px;
+}
+
+div#main .modCol2g1,
+ div#main .modCol3g1,
+ div#main .modCol3g2,
+ div#main .modCol4g1,
+ div#main .modCol5g1 {
+	overflow:hidden;
+	zoom:1;
+}
+
+div#main .modCol2g1 .colL {
+	float:left;
+	display:inline;
+	width:328px;
+	padding:1px;
+}
+
+div#main .modCol2g1 .colR {
+	float:right;
+	display:inline;
+	width:328px;
+	padding:1px;
+}
+
+div#main .modCol3g1 .colL {
+	float:left;
+	display:inline;
+	width:213px;
+	margin-right:15px;
+	padding:1px;
+}
+
+div#main .modCol3g1 .colR {
+	float:right;
+	display:inline;
+	width:213px;
+	padding:1px;
+}
+
+div#main .modCol3g2 .colL {
+	float:left;
+	display:inline;
+	width:328px;
+	margin-right:15px;
+	padding:1px;
+}
+
+div#main .modCol3g2 .colM {
+	float:left;
+	display:inline;
+	width:155px;
+	margin-right:16px;
+	padding:1px;
+}
+
+div#main .modCol3g2 .colR {
+	float:right;
+	display:inline;
+	width:155px;
+	padding:1px;
+}
+
+div#main .modCol4g1 .colL {
+	float:left;
+	display:inline;
+	width:154px;
+	margin-right:17px;
+	padding:1px;
+}
+
+div#main .modCol4g1 .colR {
+	float:right;
+	display:inline;
+	width:154px;
+	padding:1px;
+}
+
+div#main .modCol5g1 .colL {
+	float:left;
+	display:inline;
+	width:121px;
+	margin-right:15px;
+	padding:1px;
+}
+
+div#main .modCol5g1 .colR {
+	float:right;
+	display:inline;
+	width:121px;
+	padding:1px;
+}
+
+/*-------------------------------
+
+.modLayout
+
+--------------------------------*/
+
+div#main .modLayout {
+	overflow:hidden;
+	zoom:1;
+}
+
+div#main .modLayout .imgL {
+	float:left;
+	margin-right:10px;
+}
+
+div#main .modLayout .imgR {
+	float:right;
+	margin-left:10px;
+}
+
+div#main .modLayout .legend {
+	margin-top:5px;
+	line-height:1;
+}
+
+
+/*-------------------------------
+
+.modLine
+
+--------------------------------*/
+
+div#main .modLineSolid,
+ div#main ol li.modLineSolid,
+ div#main ul li.modLineSolid {
+	margin-bottom:20px;
+	padding-bottom:20px;
+	border-bottom:#999999 1px solid;
+}
+
+div#main .modLineDot,
+ div#main ol li.modLineDot,
+ div#main ul li.modLineDot {
+	margin-bottom:20px;
+	padding-bottom:20px;
+	background:url(../image/dot_999_w.gif) repeat-x left bottom;
+}
+
+div#main .modLineDotTop {
+	margin-top:20px;
+	padding-top:10px;
+	background:url(../image/dot_999_w.gif) repeat-x left top;
+}
+
+div#sub dl.modBoxSub .modLineDot {
+	margin-bottom:5px;
+	padding-bottom:5px;
+	background:url(../image/dot_999_w.gif) repeat-x left bottom;
+}
+
+/*-------------------------------
+
+div.modIndex1 ,  div.modIndex2 , div.modIndex3
+
+--------------------------------*/
+
+div#main div.modIndex1 {
+	padding-bottom:16px;
+	background:url(../image/bg_index1_b.gif) no-repeat left bottom;
+}
+
+div#main div.modIndex1In {
+	padding:13px 6px 0;
+	background:url(../image/bg_index1_t.gif) no-repeat left top;
+}
+
+div#main div.modIndex2 {
+	padding-bottom:16px;
+	background:url(../image/bg_index2_b.gif) no-repeat left bottom;
+}
+
+div#main div.modIndex2In {
+	padding:13px 6px 0;
+	background:url(../image/bg_index2_t.gif) no-repeat left top;
+}
+
+div#main div.modSingle {
+	padding:5px;
+	background:#DDD;
+}
+
+div#main div.modSingleIn {
+	width:328px;
+	padding:7px 0 11px;
+	background:#FFF;
+	border:solid 1px #C6C6C6;
+}
+
+div#main div.modIndex2In div.indexL {
+	float:left;
+	width:328px;
+}
+
+div#main div.modIndex2In div.indexR {
+	float:right;
+	width:328px;
+}
+
+div#main div.modIndex1In dl dt,
+ div#main div.modIndex2In dl dt,
+ div#main div.modIndex3In dl dt,
+ div#main div.modIndex3In_gr dl,
+ div#main div.modSingleIn dl dt {
+	padding-bottom:7px;
+	background:url(../image/dot_999_w.gif) repeat-x left bottom;
+	font-weight:bold;
+}
+
+div#main div.modIndex2In dl dt.ico,
+ div#main div.modIndex3In dl dt.ico,
+ div#main div.modIndex3In_gr dl dt.ico {
+	padding-left:2em;
+	text-indent:-2em;
+}
+
+div#main div.modIndex2In dl dt span,
+ div#main div.modIndex2In dl dd,
+ div#main div.modIndex3In dl dt span,
+ div#main div.modIndex3In dl dd,
+ div#main div.modIndex3In_gr dl dt span,
+ div#main div.modIndex3In_gr dl dd {
+	padding:0 10px 0 7px;
+}
+
+div#main div.modIndex2In dl dd,
+ div#main div.modIndex3In dl dd,
+ div#main div.modIndex3In_gr dl dd {
+	overflow:hidden;
+	margin-top:10px;
+}
+
+div#main div.modIndex2In dl dt,
+ div#main div.modIndex3In dl dt,
+ div#main div.modIndex3In_gr dl dt {
+	padding-bottom:7px;
+	background:url(../image/dot_999_w.gif) repeat-x left bottom;
+	font-weight:bold;
+}
+
+div#main div.modIndex2In dl dt.ico,
+ div#main div.modIndex3In dl dt.ico,
+ div#main div.modIndex3In_gr dl dt.ico {
+	padding-left:2em;
+	text-indent:-2em;
+}
+
+ div#main div.modIndex1In dl dt span,
+ div#main div.modIndex1In dl dd,
+ div#main div.modIndex2In dl dt span,
+ div#main div.modIndex2In dl dd,
+ div#main div.modIndex3In dl dt span,
+ div#main div.modIndex3In dl dd,
+ div#main div.modIndex3In_gr dl dt span,
+ div#main div.modIndex3In_gr dl dd,
+ div#main div.modSingleIn dl dt span,
+ div#main div.modSingleIn dl dd {
+	padding:0 10px 0 7px;
+}
+
+div#main div.modIndex1In dl dd,
+ div#main div.modIndex2In dl dd,
+ div#main div.modIndex3In dl dd,
+ div#main div.modIndex3In_gr dl dd,
+ div#main div.modSingleIn dl dd {
+	overflow:hidden;
+	margin-top:10px;
+}
+
+div#main div.modIndex3 {
+	padding-bottom:16px;
+	background:url(../image/bg_index3_b.gif) no-repeat left bottom;
+}
+
+div#main div.modIndex3In {
+	padding:13px 6px 0;
+	background:url(../image/bg_index3_t.gif) no-repeat left top;
+}
+
+div#main div.modIndex3_gr {
+	padding-bottom:16px;
+	background:url(../image/bg_index3_b_gr.gif) no-repeat left bottom;
+}
+
+div#main div.modIndex3In_gr {
+	padding:13px 6px 0;
+	background:url(../image/bg_index3_t_gr.gif) no-repeat left top;
+}
+
+div#main div.modIndex3In div.indexL,
+div#main div.modIndex3In_gr div.indexL {
+	float:left;
+	width:216px;
+}
+
+div#main div.modIndex3In div.indexM,
+div#main div.modIndex3In_gr div.indexM {
+	float:left;
+	display:inline;
+	width:216px;
+	margin-left:7px;
+}
+
+div#main div.modIndex3In div.indexR,
+div#main div.modIndex3In_gr div.indexR {
+	float:right;
+	width:216px;
+}
+
+div#main div.modIndexPlural div.modIndex2,
+ div#main div.modIndexPlural div.modIndex3,
+ div#main div.modIndexPlural div.modIndex3_gr {
+	margin-bottom:-5px;
+}
+
+
+/*-------------------------------
+
+div.modFaq
+
+--------------------------------*/
+
+div#main div.modFaq {
+	width:675px;
+	margin:40px 0 30px;
+	background:url(../image/bg_faq_m.gif) repeat-y left top;
+}
+
+div#main div.modFaq div {
+	padding-bottom:1px;
+	background:url(../image/bg_faq_b.gif) no-repeat left bottom;
+}
+
+div#main div.modFaq div dl {
+	position:relative;
+	padding-top:5px;
+	background:url(../image/bg_faq_t.gif) no-repeat left top;
+}
+
+div#main div.modFaq div dl dt {
+	min-height:41px;
+	height:auto !important;
+	height:41px;
+	margin-left:5px;
+	padding:7px 0 0 56px;
+	background:url(../image/bg_faq_q.gif) no-repeat left top;
+	font-size:117%;
+	font-weight:bold;
+	color:#CC0000;
+}
+
+div#main div.modFaq div dl dd {
+	overflow:hidden;
+	margin:-20px 10px 5px 5px;
+	padding:0 0 0 56px;
+}
+
+div#main div.modFaq div dl dd p {
+	width:410px;
+}
+
+div#main div.modFaq div dl dd img {
+	position:absolute;
+	right:10px;
+	top:12px;
+}
+
+/*-------------------------------
+
+dl.modShopService
+
+--------------------------------*/
+
+div#main dl.modShopService {
+	position:relative;
+	width:675px;
+	height:70px;
+	margin:30px 0 0;
+	background:url(../image/bg_shopservice.gif) no-repeat left top;
+}
+
+div#main dl.modShopService dt {
+	position:absolute;
+	left:60px;
+	top:22px;
+}
+
+div#main dl.modShopService dt.line2 {
+	top:14px;
+}
+
+div#main dl.modShopService dd {
+	position:absolute;
+	right:10px;
+	top:8px;
+}
+
+/*-------------------------------
+
+dl.modShopService2
+
+--------------------------------*/
+
+div#main dl.modShopService2 {
+	position:relative;
+	width:675px;
+	height:116px;
+	margin:30px 0 0;
+	background:url(../image/bg_shopservice02.gif) no-repeat left top;
+}
+
+div#main dl.modShopService2 dt {
+	position:absolute;
+	left:35px;
+	top:11px;
+}
+
+div#main dl.modShopService2 dt.line2 {
+	top:14px;
+}
+
+div#main dl.modShopService2 dd {
+	position:absolute;
+	right:10px;
+	top:31px;
+}
+
+/*-------------------------------
+
+dl.modgetPlugin
+
+--------------------------------*/
+
+div#main dl.modgetPlugin {
+	position:relative;
+	margin:30px 0;
+	padding:10px 12px;
+	background:#F0ECE0;
+}
+
+div#main dl.modgetPlugin dt {
+	font-weight:bold;
+}
+
+div#main dl.modgetPlugin dt,
+ div#main dl.modgetPlugin dd {
+	width:485px;
+}
+
+div#main dl.modgetPlugin dd ul {
+	margin-top:7px;
+}
+
+div#main dl.modgetPlugin dd p.btn img {
+	position:absolute;
+	right:10px;
+	top:31px;
+}
+
+/*-------------------------------
+
+dl.info
+
+--------------------------------*/
+
+div#main dl.info {
+	position:relative;
+	padding-bottom:5px;
+	background:url(../image/dot_666_w.gif) repeat-x 0 bottom;
+}
+
+div#main dl.info dt {
+	margin-bottom:4px;
+	padding:0 0 5px 4px;
+	background:url(../image/dot_666_w.gif) repeat-x 0 bottom;
+	line-height:1;
+}
+
+div#main dl.info dd dl,
+ div#main dl.infoContent, 
+ div#main dl.infoDotNone {
+	margin:0 5px;
+}
+
+div#main dl.info dd dl dt,
+ div#main dl.infoContent dt,
+  div#main dl.infoDotNone dt {
+	float:left;
+	clear:both;
+	margin-bottom:0;
+	padding:0;
+	border-bottom:none;
+	background:none;
+	line-height:1.5;
+	white-space:nowrap;
+}
+
+div#main dl.infoDotNone{
+	position:relative;
+	padding-bottom:5px;
+}
+
+div#main dl.normal dd dl dt {
+	width:8.3em;
+}
+
+div#main dl.normal dd dl dd {
+	margin:0 0 6px 8.3em;
+}
+
+div#main dl.addIco dd dl dt,
+ div#main dl.infoContent dt {
+	width:12.5em;
+}
+
+div#main dl.addIco dd dl dt span,
+ div#main dl.infoContent dt span {
+	display:block;
+	float:left;
+	width:7.9em;
+}
+
+div#main dl.addIco dd dl dd,
+ div#main dl.infoContent dd {
+	margin:0 0 6px 12.5em;
+}
+
+div#main dl.info dd dl dd a,
+ div#main dl.infoContent dd a,
+ div#main dl.infoDotNone dd dl dd a {
+	padding-left:0;
+	background:none;
+}
+
+div#main dl.info dd dl dd:last-child,
+ div#main dl.info dd dl dd.lastChild,
+ div#main dl.infoContent dd:last-child,
+ div#main dl.infoContent dd.lastChild {
+	margin-bottom:0;
+}
+
+div#main dl.info dd p,
+ div#main dl.infoContent dd p {
+	position:absolute;
+	top:-2px;
+	right:5px;
+	font-size:92%;
+}
+
+div#main dl.info img,
+ div#main dl.infoContent img {
+	vertical-align:middle;
+}
+
+/*-------------------------------
+
+.table
+
+--------------------------------*/
+
+div#main .table {
+	width:100%;
+	border:#AAAAAA 1px solid;
+}
+
+div#main .table th,
+ div#main .table td {
+	padding:7px 7px 5px;
+	border:#AAAAAA 1px solid;
+}
+
+div#main .table thead th {
+	background:#EEE6CD;
+}
+
+div#main .table tbody th,
+div#main .tablew50 tbody th {
+	background:#F0ECE0;
+}
+
+div#main .table .clrA {
+	background:#EEEEEE;
+}
+
+div#main .table .clrB {
+	background:#F8B862;
+}
+
+div#main .table .clrC {
+	background:#F8E58C;
+}
+
+div#main .table .clrD {
+	background:#F4F4F4;
+}
+
+div#main .tablew50{
+	width:50%;
+	border:#AAAAAA 1px solid;
+	margin-left:10px;
+}
+
+div#main .tablew50 th,
+div#main .tablew50 td{
+	padding:7px 7px 5px;
+	border-bottm:#AAAAAA 1px solid;
+	border-right:#AAAAAA 1px solid;
+	width:50%;
+}
+
+div#main .tablew50 td.borderD{
+	padding:7px 7px 5px;
+	border-bottom:#AAAAAA 1px dotted;
+	border-top:#AAAAAA 1px solid;
+	width:50%;
+}
+
+/*div.form table
+
+-------------------------*/
+
+div#main div.form table {
+	width:100%;
+	border:#CCCCCC 1px solid;
+}
+
+div#main div.form table th,
+ div#main div.form table td {
+	border:#CCCCCC 1px solid;
+	line-height:1;
+	vertical-align:top;
+}
+
+div#main div.form table th {
+	width:125px;
+	padding:10px 8px;
+}
+
+div#main div.form table td {
+	width:290px;
+	padding:5px;
+}
+
+div#main div.form table td.clrD {
+	width:234px;
+	padding:10px 8px;
+}
+
+div#main div.form table .num {
+	width:50px;
+}
+
+div#main div.form table .txtM {
+	width:150px;
+}
+
+div#main div.form table .txtL {
+	width:289px;
+}
+
+div#main div.form table ul li {
+	display:inline-block;
+ *display:inline;
+	white-space:nowrap;
+	margin-right:5px;
+	zoom:1;
+}
+
+div#main div.form table ul li.input {
+	margin-bottom:10px;
+ *margin-bottom:3px;
+}
+
+div#main div.form table ul li input {
+	margin:0 5px 0 0;
+	vertical-align:middle;
+}
+
+div#main div.form div {
+	width:675px;
+	margin-top:10px;
+	padding:9px 0 7px;
+	background:#F0ECE0;
+}
+
+div#main div.form div ul {
+	overflow:hidden;
+	width:269px;
+	margin:0 auto;
+}
+
+div#main div.form div ul li {
+	float:left;
+	line-height:1;
+	font-size:0;
+}
+
+/*-------------------------------
+
+position
+
+--------------------------------*/
+
+.txtR {
+	text-align:right;
+}
+
+div#main .positionC,
+ .positionC {
+	text-align:center;
+}
+
+div#main .positionD,
+ .positionD {
+	text-align:center;
+	vertical-align:middle;
+}
+
+div#main .zoomGlass p {
+	margin-top:5px;
+}
+
+div#main .zoomGlass p img {
+	padding-right:3px;
+	vertical-align:top;
+}
+
+/*-------------------------------
+
+div.tabs
+
+--------------------------------*/
+
+div#main div#tabs {
+	width:674px;
+	background:url(../image/bg_tab_bg.gif) repeat-x left bottom;
+}
+
+div#main div div.tabsIn {
+	background:url(../image/bg_tab_t.gif) no-repeat left top;
+}
+
+div#main div.parentflag1 div.tabsIn {
+	background-position:-502px top;
+}
+
+div#main div.parentflag2 div.tabsIn {
+	background-position:-334px top;
+}
+
+div#main div.parentflag3 div.tabsIn {
+	background-position:-167px top;
+}
+
+div#main div.parentflag4 div.tabsIn {
+	background-position:0 top;
+}
+
+div#tabs div ul {
+	overflow:hidden;
+	zoom:1;
+	background:url(../image/bg_tab_b.gif) no-repeat left bottom;
+}
+
+div#main div.parentflag1 div ul {
+	background-position:-502px bottom;
+}
+
+div#main div.parentflag2 ul {
+	background-position:-334px bottom;
+}
+
+div#main div.parentflag3 ul {
+	background-position:-167px bottom;
+}
+
+div#main div.parentflag4 ul {
+	background-position:0 bottom;
+}
+
+div#main div#tabs ul li {
+	float:left;
+	width:158px;
+	padding:0 5px;
+}
+
+div#main div#tabs ul li span {
+	display:block;
+	width:148px;
+	margin:0 auto;
+	padding-top:5px;
+	text-align:center;
+}
+
+div#main div#tabs ul li a {
+	padding-left:0;
+	background:none;
+}
+
+div#main div#tabs dl dd div {
+	padding:10px;
+	border-right:#CCCCCC 1px solid;
+	border-bottom:#CCCCCC 1px solid;
+	border-left:#CCCCCC 1px solid;
+}
+
+
+
+/* 以下 2010.8現在　下記で使用
+
+	 /personal/netbank/index.html
+	 /personal/account/index.html
+	 /personal/services/index.html
+--------------------------------*/
+
+/*-------------------------------
+
+netBanking
+
+--------------------------------*/
+div#main .netBanking {
+	width:675px;
+	min-height:60px;
+	height:auto !important;
+	height:60px;
+	margin-top:20px;
+	background: #EEE;
+	border-top: solid 1px #CCC;
+	border-left: solid 1px #CCC;
+	border-right: solid 1px #A6A6A6;
+	border-bottom: solid 1px #A6A6A6;
+}
+div#main .netBanking dt {
+	float: left;
+}
+div#main .netBanking dd {
+	float: right;
+	padding: 8px 10px 0 0;
+}
+div#main .netBanking dd.txtLink {
+	float: left;
+	padding:22px 0 0 20px;
+	width:174px;
+}
+
+/*-------------------------------
+
+accountBox
+
+--------------------------------*/
+div#main .accountBox {
+	margin-top: 2em;
+	padding: 5px 10px;
+	background: url(/shared/image/bg_accountbox.gif) no-repeat center top;
+	border: solid 1px #CCC;
+	}
+div#main .accountBox .ttl {
+	margin-bottom: 20px;
+	}
+div#main .accountBox .txt01 {
+	float: left;
+	padding: 13px 12px 0 8px;
+	}
+div#main .accountBox .txt02 {
+	float: left;
+	width: 253px;
+	margin-top: 5px;
+	padding-left: 7px;
+	background: url(/shared/image/line_dot_999.gif) repeat-y left top;
+	}
+
+div#main .accountBox .col2 {
+	width: 626px;
+	margin: 0 auto 1em;
+	}
+div#main .accountBox .colL,
+div#main .accountBox .colL div,
+div#main .accountBox .colR div,
+div#main .accountBox .colL p,
+div#main .accountBox .colR p {
+	float: left;
+	}
+div#main .accountBox .colR {
+	float: right;
+	}
+div#main .accountBox .col2 .figure { padding-top: 5px; }
+div#main .accountBox .colL .btn { padding: 13px 10px 0; }
+div#main .accountBox .colR .url { padding: 30px 10px 0; }
+
+
+/*-------------------------------
+
+accountCol2
+
+--------------------------------*/
+div#main .accountCol2 {
+	background: url(/shared/image/bg_account_col2.gif) repeat-y center top;
+	border-left: solid 1px #CCC;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	}
+div#main .accountCol2 .accountColL {
+	float: left;
+	width: 336px;
+	background: url(/shared/image/bg_accountbox_s.gif) no-repeat left top;
+	}
+div#main .accountCol2 .accountColR {
+	float: right;
+	width: 336px;
+	background: url(/shared/image/bg_accountbox_s.gif) no-repeat left top;
+	}
+
+div#main .accountCol2 .figure {
+	float: left;
+	padding: 10px;
+	}
+div#main .accountCol2 dl {
+	float: left;
+	width: 251px;
+	padding: 20px 5px 3px 0;
+	}
+div#main .accountCol2 dt {
+	background: url(/shared/image/line_dot_999_w.gif) repeat-x left bottom;
+	margin-bottom: 5px;
+	padding-bottom: 10px;
+	}
+div#main .accountCol2 dd span {
+	display: block;
+	font-weight: bold;
+	}
+
+/*-------------------------------
+
+gr
+
+--------------------------------*/
+div#main .gr dt {
+	min-height: 26px;
+	height: auto !important;
+	height: 26px;
+	padding: 7px 0 0 10px;
+	background: url(/shared/image/bg_gr.gif) repeat-x 0 0;
+	font-weight: bold;
+	cursor:pointer;
+	}
+div#main .gr dt span {
+	background: url(/shared/image/ico/ico_arw_cir.gif) no-repeat 0 0;
+	padding: 2px 0 0 15px;
+	color: #369;
+	text-decoration: underline;
+	}
+div#main .gr dt.up span {
+	background: url(/shared/image/ico/ico_arw_cir_anchor.gif) no-repeat 0 2px;
+	}
+div#main .gr dd {
+	overflow:hidden;
+	/height:1%;
+	margin: 0.5em 30px 1em;
+	}
+div#main .gr dd .imgR {
+	float: right;
+	width: auto;
+	padding-left: 20px;
+	}
+div#main .gr dd .txt { overflow:hidden; }
+div#main .gr dd .hedge { margin-top: 0.5em;	}
+
+/*-------------------------------
+
+clearfix
+
+--------------------------------*/
+.toggle dd:after {  
+	content: ".";   
+	display: block;   
+	height: 0;   
+	clear: both;   
+	visibility: hidden;  
+	}
+
+.toggle dd {  
+	display: inline-block;  
+	min-height: 1%;  
+	}
+
+/* Hides from IE-mac \*/  
+* html .toggle dd {  
+	height: 1%;  
+	}  
+	.toggle dd {  
+	display: block;  
+	}
+	
+/*-------------------------------
+
+class
+
+--------------------------------*/	
+div#main .p5 {
+	padding:5px;
+}
+div#main .pt10 {
+	padding-top:10px;
+}
+div#main .pr5 {
+	padding-right:5px;
+}
+div#main .pl10 {
+	padding-left:10px;
+}
+div#main .pb5 {
+	padding-bottom:5px;
+}
+.border_btm {
+	border-bottom:1px solid #424242;
+}
+.floatL {
+	float:left;
+}
+.floatR {
+	float:right;
+}
+
+.pc_none {
+	display: none!important;
+}
+
+.sp_none {
+	display: block!important;
+}
+.fBlack {color:#333333 !important;}
+
+
+/*-------------------------------
+
+2017-4-18 
+
+--------------------------------*/
+div#main .ml90{
+	margin-left:90px;
+	}
+
+
+/*-------------------------------
+
+2020-09-01 
+
+--------------------------------*/
+div#main .modBoxWord2 {
+    max-width: calc(100% - 18px);
+}
+
+/*-------------------------------
+
+2020-09-02
+
+--------------------------------*/
+
+div#main ul.listCir02 li{
+    background: none;
+}
+div#main ul.listCir02 li:before{
+    content:"・";
+    padding-right: 3px;
+    margin-left: -9px;
+}

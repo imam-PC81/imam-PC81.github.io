@@ -1,0 +1,637 @@
+/************************************************
+/modal
+************************************************/
+#fancybox-content{
+	width: 715px !important;
+}
+#fancybox-overlay{
+	min-width: 910px;
+}
+body#popup #mainArea.modal{
+	width: 100%;
+}
+
+
+/*---------------
+modalContents
+------------------*/
+/*
+/personal/account/modal_account.html
+/personal/account/jcb_debit/modal_account.html
+/personal/account/jcb_debit/modal_qa.html
+/personal/account/jcb_debit/modal_account02.html
+--------------------------------------------------- */
+#modalWrap{
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+/* btnWhite */
+#modalWrap .btnWhite{
+	width: 100%;
+}
+#modalWrap .btnWhite a{
+	display: block;
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 33%, #f7f7f7 100%);
+	background: -webkit-linear-gradient(top,  #ffffff 33%,#f7f7f7 100%);
+	background: linear-gradient(to bottom,  #ffffff 33%,#f7f7f7 100%);
+	border: solid 1px #d7d7d7;
+	border-bottom: solid 3px #b3b3b3;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+#modalWrap .btnWhite a:hover{
+	text-decoration: none;
+	opacity: 0.8;
+}
+#modalWrap .btnWhite a > span{
+	display: block;
+}
+#modalWrap .btnWhite a > span > span{
+	display: inline-block;
+	padding: 12px 0 10px;
+	color: #015c23;
+	font-size: 100.0% !important;
+	font-weight: bold;
+	line-height: 1;
+}
+
+/* btnOrange */
+#modalWrap .btnOrange{
+	width: 100%;
+	margin-bottom:1.4em;
+}
+#modalWrap .btnOrange .balloon{
+	display:block;
+	margin-bottom:3px;}
+#modalWrap .btnOrange .balloon img{
+	display:block; margin:0 auto; width:123px;}
+#modalWrap .btnOrange a{
+	display: table;
+	width:100%;
+	background: #ff9500;
+	background: -moz-linear-gradient(top,  #ff9500 0%, #ff8800 100%);
+	background: -webkit-linear-gradient(top,  #ff9500 0%,#ff8800 100%);
+	background: linear-gradient(to bottom,  #ff9500 0%,#ff8800 100%);
+	border-bottom: solid 3px #cf6700;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+#modalWrap .btnOrange a:hover{
+	text-decoration: none;
+	opacity: 0.8;
+}
+#modalWrap .btnOrange a > span{
+	display: table-cell;
+	height:71px; box-sizing:border-box;
+	background: url('/personal/account/jcb_debit/shared/img/btnorange_bg.png') no-repeat 0 100%;
+	vertical-align:middle;
+}
+#modalWrap .btnOrange a > span > span{
+	display: inline-block;
+	padding: 26px 20px 22px;
+	 color: #fff;
+	font-size: 140%;
+	font-weight: bold;
+	line-height: 1.2;
+	background: url('/shared/img/index_new_ico_blank_001.png') no-repeat 100% 50%;
+}
+/* btnOrange twoLine */
+#modalWrap .btnOrange.twoLine a > span > span{
+	display: inline;
+	padding: 0;
+	background: none;
+}
+#modalWrap .btnOrange.twoLine a > span > span > span{
+	font-size: 80.0%;
+}
+.accountJp #modalWrap .btnOrange.twoLine a > span > span > span.btnTxtSmall{
+	font-size: 0.812rem;
+}/*20190513追加*/
+#modalWrap .btnOrange.twoLine a > span > span + span{
+	display: inline-block;
+	padding: 0 20px;
+	padding-bottom: 0;
+	background-position: 100% 50%;
+}
+#modalWrap .btnOrange.twoLine a > span{
+	padding: 0 10px;
+}
+#modalWrap .btnOrange.twoLine a > span > span:last-child{
+	display:inline;
+	padding-right:20px;
+	background: url('/shared/img/index_new_ico_blank_001.png') no-repeat 100% 56%;
+}
+#modalWrap .btnOrange.twoLine a > span > span:last-child.fix{
+	padding-right:21px;
+}/*20190513追加*/
+
+/*↓20181018 #generalService .generalServiceInner .otherServiceInner追加↓*/
+#debitService,
+#generalService{
+	width: 685px;
+	background-color: #ffffe5;
+	box-sizing: border-box;
+	border: solid 2px #01a32b;
+	border-radius: 10px;
+}
+
+.modalTitle{
+	padding: 10px 30px 0;
+	background:#01a32b;
+	border-radius:6px 6px 0 0;
+}
+
+.modalTitleInner{
+	padding: 0 0 10px;
+	border-bottom: solid 1px #01a32b;
+	color:#FFF;
+	line-height: 1;
+	text-align: center;
+}
+.modalTitleInner p{
+	margin: 0;
+	font-size: 170%;
+	font-weight:bold;
+}
+
+.modalTitleInner p + p{
+	margin: 15px 0 0;
+	font-size: 153.8%;
+	line-height: 1.3;
+	font-weight: bold;
+}
+
+.debitServiceInner,
+.generalServiceInner,
+.otherServiceInner{
+	width: auto !important;
+}
+.debitServiceInner,
+.generalServiceInner{
+	padding: 0 28px 0 6px;
+}
+.debitServiceInner.en,
+.otherServiceInner{
+	padding: 0 28px;
+}
+.debitServiceInner,
+.otherServiceInner{
+	margin: 30px 0 0;
+}
+.generalServiceInner{
+	margin: 10px 0 0;
+}
+.debitServiceInner > p,
+.generalServiceInner > p,
+.otherServiceInner > p{
+	font-size: 123.1%;
+	text-align: center;
+}
+.generalServiceInner p{
+	margin-top: 25px;
+}
+.debitServiceInner > .btnWhite,
+.generalServiceInner > .btnWhite,
+.otherServiceInner > .btnWhite{
+	width: 410px;
+	margin: 0 auto;
+}
+.debitServiceInner > .btnWhite a,
+.generalServiceInner > .btnWhite a,
+.otherServiceInner > .btnWhite a{
+	padding-right: 15px;
+	background: url('/shared/img/cmn_ico_003.png') no-repeat 97% 50%;
+}
+/*.debitServiceInner ul{
+}*/
+.debitServiceInner ul li:first-child,
+.generalServiceInner ul li:first-child,
+.otherServiceInner ul li:first-child{
+	padding-top: 0;
+	background: none;
+}
+.debitServiceInner ul li,
+.generalServiceInner ul li,
+.otherServiceInner ul li{
+	background: url('/shared/img/border_img.png') repeat-x 0 top;
+}
+
+.debitServiceInner ul li,
+.otherServiceInner ul li{
+	padding: 34px 0;
+}
+.generalServiceInner ul li{
+	padding: 0 0 15px;
+}
+.debitServiceInner ul li.txtLink,
+.generalServiceInner ul li.txtLink,
+.otherServiceInner ul li.txtLink{
+	padding: 20px 0 10px;
+}
+.debitServiceInner ul li div,
+.generalServiceInner ul li div,
+.otherServiceInner ul li div{
+	float: left;
+}
+/*.debitServiceInner ul li div.nml22,
+.generalServiceInner ul li div.nml22{
+	margin-left:-22px;
+}*/
+.debitServiceInner ul li div + div,
+.generalServiceInner ul li div + div,
+.otherServiceInner ul li div + div{
+	float: right;
+	width: 310px;
+}
+/*↑20181018 #generalService, .generalServiceInner .otherServiceInner追加↑*/
+
+/* modalBox */
+.modalBox{
+	margin: 30px 0 0;
+}
+.modalBox dl{
+	width: 685px;
+	background-color: #ffffe5;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.modalBox dl dt{
+	background-color: #999;
+	padding: 10px 10px 8px;
+	border: solid 2px #999; border-bottom:none;
+	border-radius: 10px 10px 0 0;
+	font-size: 153.8%;
+	color: #ffffff;
+	text-align: center;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+
+.modalBox dl dd{
+	background-color: #ffffff;
+	border: solid 2px #999;
+	border-radius: 0 0 10px 10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.modalBox dl dd > div{
+	width: 300px;
+	margin: 45px auto;
+}
+.modalBox dl dd .debitServiceInner,
+.modalBox dl dd .otherServiceInner{
+	margin: 30px auto 0;
+}/*20181018追加*/
+
+/* modalBox twoCol */
+.modalBox.twoCol{
+	width: 685px;
+	margin: 0;
+}
+.modalBox.twoCol dl{
+	width: 327px;
+	float: right;
+	background-color: #ffffe5;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.modalBox.twoCol dl:first-child{
+	margin: 0;
+	float: left;
+}
+.modalBox.twoCol dd{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* modalBox bgColor */
+.modalBox.bgColor dl dt{
+	background-color: #01a32b;
+	border-color:#01a32b;
+}
+.modalBox.bgColor dl dd{
+	background-color: #ffffe5;
+	border-color:#01a32b;
+}
+
+/* debitQa */
+.debitQa{
+	width: 685px;
+	padding: 0 0 15px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.debitQa dl dt{
+	margin: 0 0 30px;
+	padding: 15px 15px 13px 54px;
+	background-image: url('/personal/account/jcb_debit/shared/img/modal_ico_003.png');
+	background-repeat: no-repeat;
+	background-position: 16px 50%;
+	background-color: #01a32b;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	color: #ffffff;
+	font-size: 184.6%;
+	font-weight: bold;
+	line-height: 1;
+	position: relative;
+}
+.debitQa dl dt:before{
+	content: "";
+	display: block;
+	background: url('/personal/account/jcb_debit/shared/img/modal_ico_004.png') no-repeat 0 0;
+	width: 27px;
+	height: 18px;
+	position: absolute;
+	bottom: -16px;
+	left: 50px;
+}
+.debitQa dl dd{
+	color: #4c4c4c;
+	font-size: 107.7%;
+	line-height: 1.5;
+}
+.debitQa dl dd ul{
+	margin: 20px 0 0;
+}
+.debitQa dl dd ul li{
+	float: left;
+	width: 160px;
+	margin: 0 0 0 15px;
+	min-height: 169px;
+	background: #ffffe5;
+	border: solid 2px #c3dea5;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.debitQa dl dd ul li:first-child{
+	margin: 0;
+}
+.debitQa dl dd ul li p{
+	margin: 0;
+	padding: 107px 0 14px;
+	color: #01a32b;
+	font-size: 100%;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.3;
+}
+.debitQa dl dd ul li p strong{
+	font-size: 130.8%;
+}
+.debitQa dl dd ul li p .between{
+	letter-spacing: -1px;
+}
+
+.debitQa dl dd ul li.point1 p{
+	background: url('/personal/account/jcb_debit/shared/img/modal_img_003.png') no-repeat 50% 15px;
+}
+.debitQa dl dd ul li.point2 p{
+	background: url('/personal/account/jcb_debit/shared/img/modal_img_004.png') no-repeat 50% 15px;
+}
+.debitQa dl dd ul li.point3 p{
+	background: url('/personal/account/jcb_debit/shared/img/modal_img_005.png') no-repeat 50% 15px;
+}
+.debitQa dl dd ul li.point4 p{
+	background: url('/personal/account/jcb_debit/shared/img/modal_img_006.png') no-repeat 50% 15px;
+}
+
+
+/* contentsBox */
+.contentsBox{
+	width: 685px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+
+/* modalClose */
+#modalClose{
+	max-width: 685px;
+}
+
+#modalClose p{
+	width: 117px !important;
+	margin: 20px auto;
+}
+#modalClose p a{
+	padding: 0 0 0 15px;
+	background: url('/personal/account/jcb_debit/shared/img/modal_ico_002.png') no-repeat 10px 50% !important;
+}
+#modalClose p a > span > span{
+	color: #4c4c4c !important;
+}
+
+/* disaster */
+.disBtn{
+    background: #b7b7b7;
+    border-bottom: 3px solid #666;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+.disBtn span {
+    color: #fff;
+    display: inline-block;
+    font-size: 166.7%;
+    line-height: 1;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.disBtn span span{
+    font-size: 80%;
+    padding: 8px 0 0;
+}
+.disBtn.normal span{
+    font-size: 125%;
+}
+.disBtn.normal span span{
+    font-size: 75%;
+    padding: 5px 0 0;
+}
+
+.disTxt{
+	border:solid 1px #bebebe;
+	color: #5e5e5e;
+	background: #dfdfdf;
+	padding: 0 3px;
+	margin: 5px 0 0;
+	text-align: center;
+	display: inline-block;
+}
+
+.txtLink .itemRight{
+	float:right;
+	width:310px;}
+
+/* ---------------------------
+ english
+----------------------------- */
+.en #modalWrap a.linkBlock01 {
+	word-break: normal;
+}
+.en #modalWrap .btnOrange .balloon img{
+	width:203px;}
+
+
+
+/* ---------------------------
+ loan 20190514追加
+----------------------------- */
+.loanJp, .accountJp, .debitJpModal{
+	font-family: 'メイリオ',Meiryo,'Hiragino Kaku Gothic Pro',sans-serif;
+}/*20190515更新*/
+.loanJp .otherServiceInner p.text{
+	font-size: 1.188rem;
+	color: #01a32b;
+	font-weight: bold;
+	margin-bottom: 0.75rem;
+}
+.loanJp .otherServiceInner ul{
+	padding: 32px 47px 17px;
+}
+.loanJp .otherServiceInner ul li{
+	background: none;
+	padding: 0;
+}
+.loanJp .modalBox dl dt{
+	background-color: #01a32b;
+	border: solid 2px #01a32b;
+}
+.loanJp .modalBox dl dd{
+	border: solid 2px #01a32b;
+	background-color: #ffffe5;
+}
+.loanJp .outerText{
+	max-width: 685px;
+}
+.loanJp .outerTextBox{
+	display: block;
+	float: right;
+}
+.loanJp .outerTextBox p{
+	margin-top: 18px;
+	font-weight: bold;
+}
+
+
+
+/* ---------------------------
+ accountJp 20190515追加
+----------------------------- */
+.accountJp h1{
+	margin-bottom: 20px;
+}
+.accountJp .modalTitle{
+	padding: 16px 15px 9px;
+}
+.modalTitleInner{
+	padding: 0;}
+.accountJp .modalTitleInner p,
+.accountJp .modalBox dl dt{
+	font-size: 1.188rem;
+}
+.accountJp .modalTitleInner p span{
+	font-size: 1.375rem;
+	color: #feea02;
+}
+.accountJp .debitServiceInner,
+.accountJp .generalServiceInner,
+.accountJp .otherServiceInner{
+	margin: 0;
+}
+.accountJp .debitServiceInner,
+.accountJp .otherServiceInner{
+	padding: 0.375rem 1.75rem 2.125rem;
+}
+.accountJp .generalServiceInner{
+	padding: 0.375rem 1.75rem 1.437rem;
+	margin: 0;
+}
+.accountJp .debitServiceInner ul li,
+.accountJp .generalServiceInner ul li{
+	padding: 0;
+	position: relative;
+}
+.accountJp .otherServiceInner ul li{
+	padding: 0;
+}
+.accountJp .otherServiceInner ul li:first-child{
+	margin-bottom: 2.125rem;
+}
+.accountJp .debitServiceInner ul li div + div,
+.accountJp .generalServiceInner ul li div + div{
+	position: absolute;
+	right: 0;;
+}
+.accountJp .debitServiceInner ul li div + div{
+	bottom: -0.8rem;
+}
+.accountJp .debitServiceInner ul li .pattern3{
+	top: 1rem;
+}
+.accountJp .generalServiceInner ul li div + div{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.accountJp .debitServiceInner ul li div + div img:hover{
+	opacity: 0.8;
+}
+/*.accountJp .debitServiceInner ul li div.typeDebitNone{
+	bottom: 1.5rem;
+}*/
+.accountJp .modalBox dl dt,
+.accountJp .modalBox dl dd{
+	border:solid 2px #01a32b;
+}
+.accountJp .modalBox dl dt{
+	background-color: #01a32b;
+}
+
+
+
+/* ---------------------------
+ debitJpModal 20190515追加
+----------------------------- */
+.debitJpModal .modalBox dl dd > div.debitSelectL,
+.debitJpModal .modalBox dl dd > div.debitSelectR{
+	margin: 23px auto 38px;
+}
+.debitJpModal .modalBox dl dd > div.debitSelectR{
+	padding-left: 30px;
+}
+.debitJpModal .modalBox dl dd > div p.debitSelectTtl{
+	font-size: 1.12rem;
+	font-weight: bold;
+	color: #01a32b;
+	margin-bottom: 10px;
+}
+.debitJpModal .modalBox dl dt{
+	background-color: #01a32b;
+	border: solid 2px #01a32b;
+}
+.debitJpModal .modalBox dl dd{
+	border: solid 2px #01a32b;
+}
+.debitJpModal .modalBox.bgColor dl dd.debitSelect{
+	padding-left: 25px;
+}
+#modalWrap .debitSelectL .btnOrange,
+#modalWrap .debitSelectR .btnOrange{
+	margin-bottom: 0;
+}
+
+
+
+
+
+

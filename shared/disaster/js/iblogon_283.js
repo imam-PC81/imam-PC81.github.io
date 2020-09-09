@@ -1,0 +1,1 @@
+document.write('<a href="https://mb.sevenbank.co.jp/SB/SB_U_CO_002/SB_U_CO_002_100.aspx?Lang=ja-JP" onclick="window.open(this.href, \'7bkwindow\', \'width=1020, height=820, menubar=no, toolbar=no, scrollbars=yes\'); return false;"><img src="/shared/img/sp_header_menu_btn_002.png" alt="ログオン"></a></a>');

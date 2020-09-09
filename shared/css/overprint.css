@@ -1,0 +1,96 @@
+/************************************************
+print.css
+************************************************/
+body {
+   	font-size: 12px;
+	overflow: visible !important;
+}
+
+#headerArea{
+	border-bottom:2px solid #01A32B;
+}
+
+#headerArea .link ul,
+#headerArea .func,
+#globalNaviArea,
+#localNaviArea,
+#headerSpMenu,
+#menuBlock{
+	display:none !important;
+}
+
+#functionArea {
+	background:red !important;
+	overflow: visible !important;
+}
+
+#footerLogo,
+#footerLink ul{
+	display:none !important;
+}
+
+
+.accordionBlock01 .acHead a.acLabel {
+	width:120px;
+}
+
+.indexBlock01 ul{overflow:hidden;}
+
+.atmFeature01 .detail p#num04,
+.atmFeature01 .detail p#num05,
+.atmFeature01 .detail p#num06 {
+	top:770px;
+}
+
+.atmFeature01 .detail:not(:target) {
+	height:1050px\9;
+}
+
+.atmFeature01 .detail p#num04:not(:target),
+.atmFeature01 .detail p#num05:not(:target),
+.atmFeature01 .detail p#num06:not(:target) {
+	top:850px\9;
+	bottom:inherit\9;
+}
+
+/*---------------
+printBlock
+------------------*/
+.printBlock01 {
+	display:none;	
+}
+#functionArea{
+	background:none !important;
+}
+#mainArea{
+	overflow:hidden;
+}
+#mainArea:after {
+    clear:none !important;
+}
+
+
+/*---------------
+firefox
+------------------*/
+
+#headerArea, x:-moz-any-link{
+	width:910px;
+	float:left;
+	*width:100%;
+	*float:none;
+}
+#functionArea, x:-moz-any-link{
+	float:left;
+	*float:none;
+}
+#mainArea, x:-moz-any-link{
+	float:left;
+	*float:none;
+}
+#footerArea, x:-moz-any-link{
+	width:910px;
+	float:left;
+	*width:100%;
+	*float:none;
+}

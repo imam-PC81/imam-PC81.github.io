@@ -1,0 +1,350 @@
+/************************************************
+/modal
+************************************************/
+
+
+/*---------------
+modalContents
+------------------*/
+/*
+/personal/account/modal_account.html
+/personal/account/jcb_debit/modal_account.html
+/personal/account/jcb_debit/modal_qa.html
+/personal/account/jcb_debit/modal_account02.html
+--------------------------------------------------- */
+#modalWrap{
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+/* btnOrange */
+#modalWrap .btnOrange a > span > span{
+	padding: 14px 20px 10px;
+	font-size: 138.5%;
+}
+
+/* btnOrange */
+#modalWrap .btnOrange a > span{
+	height:auto;}
+#modalWrap .btnOrange a > span > span{
+	padding: 18px 20px 14px;
+    font-size: 124%;
+}
+
+/* btnOrange twoLine */
+#modalWrap .btnOrange.twoLine a > span{
+	padding: 18px 10px 14px;
+	height:auto;
+}
+
+#modalWrap .btnOrange.twoLine a > span > span{
+	display: inline;
+	padding: 0;
+}
+#modalWrap .btnOrange.twoLine a > span > span:first-child{
+	display: inline;}
+#modalWrap .btnOrange.twoLine a > span > span > span{
+	font-size: 80%;
+}
+#modalWrap .btnOrange.twoLine a > span > span + span{
+	display: inline;
+	padding: 0 20px 0 0;
+	background-position: 100% 50%;
+}
+
+/*↓20181018 #generalService .generalServiceInner .otherServiceInner追加↓*/
+#debitService,
+#generalService{
+	width: 100%;
+}
+.modalTitle{
+	padding: 8px 4px 6px;
+}
+.modalTitleInner{
+	padding:0;}
+.modalTitleInner p{
+	font-size: 115.4%;
+	line-height:1.4;
+}
+.modalTitleInner p + p{
+	font-size: 100%;
+}
+.debitServiceInner,
+.generalServiceInner,
+.otherServiceInner{
+	margin: 20px 0 0;
+	padding: 0 20px;
+}
+.debitServiceInner > p,
+.generalServiceInner > p,
+.otherServiceInner > p{
+	font-size: 123.1%;
+	text-align: center;
+}
+.generalServiceInner p{
+	margin-top: 15px;
+}
+.debitServiceInner > .btnWhite,
+.generalServiceInner > .btnWhite,
+.otherServiceInner > .btnWhite{
+	width: 410px;
+	margin: 0 auto;
+}
+.debitServiceInner > .btnWhite a,
+.generalServiceInner > .btnWhite a,
+.otherServiceInner > .btnWhite a{
+	padding-right: 15px;
+	background: url('/shared/img/cmn_ico_003.png') no-repeat 97% 50%;
+}
+/*.debitServiceInner ul{
+}*/
+.debitServiceInner ul li:first-child,
+.otherServiceInner ul li:first-child{
+	padding-bottom: 20px;
+}
+.debitServiceInner ul li,
+.otherServiceInner ul li{
+	padding: 20px 0;
+	background: url('/shared/img/border_img.png') repeat-x 0 top;
+}
+.generalServiceInner ul li{
+	padding: 0;
+}
+.debitServiceInner ul li div,
+.generalServiceInner ul li div,
+.otherServiceInner ul li div{
+	float: none;
+	text-align: center;
+}
+.debitServiceInner ul li div img,
+.generalServiceInner ul li div img,
+.otherServiceInner ul li div img{
+	width: 250px;
+}
+.debitServiceInner ul li div + div,
+.generalServiceInner ul li div + div,
+.otherServiceInner ul li div + div{
+	float: none;
+	width: 100%;
+	margin: 15px 0 0;
+}
+.debitServiceInner ul li div + div .btnOrange,
+.generalServiceInner ul li div + div .btnOrange,
+.otherServiceInner ul li div + div .btnOrange{
+	width: 100%;
+	margin:0;
+}
+.debitServiceInner ul li div + div p,
+.generalServiceInner ul li div + div p,
+.otherServiceInner ul li div + div p{
+	margin:10px 0 0;
+	text-align: left;
+}
+.debitServiceInner .nanacoImg {
+	margin-right: 1em;
+}
+.debitServiceInner.en .soukinImg,
+.otherServiceInner.en .soukinImg{
+	margin-left: 0.6em;
+}
+/*↑20181018 #generalService, .generalServiceInner .otherServiceInner追加↑*/
+
+/* modalBox */
+.modalBox{
+	margin: 20px 0 0;
+}
+.modalBox.twoCol {
+	width: 100%;
+}
+.modalBox dl{
+	float: none !important;
+	width: 100% !important;
+}
+.modalBox dl dt{
+	padding: 8px 4px 6px;
+	font-size: 115.4%;
+	line-height: 1.4;
+}
+.modalBox dl dd{
+}
+.modalBox dl dd > div{
+	width: 100%;
+	margin: 20px auto 25px;
+	padding: 0 20px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.modalBox dl dd .debitServiceInner{
+	margin: 20px auto 0;
+	padding: 0 20px;
+}
+
+/* modalBox twoCol */
+.modalBox.twoCol dl{
+	width: 100%;
+	float: none;
+	margin: 20px 0 0;
+}
+.modalBox.twoCol dd{
+	min-height: auto;
+}
+
+/* debitQa */
+.debitQa{
+	width: 100%;
+	padding: 0 0 15px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.debitQa dl dt{
+	margin: 0 0 15px;
+	padding: 12px 10px 10px 30px;
+	background-position: 8px 50%;
+	background-size: 15px;
+	font-size: 123.1%;
+}
+.debitQa dl dt:before{
+	background-size: cover;
+	width: 13px;
+	height: 9px;
+	bottom: -8px;
+	left: 25px;
+}
+.debitQa dl dd ul{
+	margin: 10px 0 0;
+}
+.debitQa dl dd ul li{
+	width: 48%;
+	margin: 0 0 10px 10px;
+	min-height: 185px;
+}
+.debitQa dl dd ul li:nth-child(odd){
+	margin-left: 0;
+}
+.debitQa dl dd ul li:nth-child(n+3){
+	margin-bottom: 0;
+}
+
+/* contentsBox */
+.contentsBox{
+	width: 100%;
+}
+
+.contentsBox .imageBlock01 .image img{
+	width: auto;
+	max-width: 100%;
+}
+
+
+
+/* modalClose */
+#modalClose{
+	max-width: none;
+	width: 100%;
+}
+
+.txtLink .itemRight{
+	float:none;
+	width:auto;
+	text-align:left;}
+
+/* ---------------------------
+ english
+----------------------------- */
+.en #modalWrap .btnOrange.twoLine a > span{
+	padding: 14px 10px;
+}
+.en #modalWrap .btnOrange.twoLine a > span > span > span{
+	font-size: 74%;
+}
+
+
+/* ---------------------------
+ loan 20190514追加
+----------------------------- */
+.loanJp .otherServiceInner ul li div .card{
+	width: 100%;
+	max-width: 163px;
+}
+.loanJp .otherServiceInner ul{
+	padding: 32px 0 17px;
+}
+.loanJp .otherServiceInner ul li:first-child{
+	padding-bottom: 0;
+}
+.loanJp .otherServiceInner p.text{
+	margin-top: 1.5rem;
+	text-align: center;
+	line-height: 1.3;
+}
+.loanJp .outerText{
+	max-width: 100%;
+}
+
+
+
+/* ---------------------------
+ accountJp 20190515追加
+----------------------------- */
+.accountJp h1{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.accountJp h1 img{
+	max-width: 685px;
+	width: 100%;
+}
+.accountJp .modalTitle{
+	padding: 10px 15px 5px;
+}
+.accountJp .debitServiceInner{
+	padding: 0.375rem 1.28rem 0.7rem;
+}
+.accountJp .otherServiceInner{
+	padding: 0.375rem 1.28rem 1.1rem;
+}
+.accountJp .generalServiceInner{
+	padding: 0.375rem 1.28rem 0;
+}
+.accountJp .debitServiceInner ul li div + div,
+.accountJp .generalServiceInner ul li div + div{
+	position: inherit;
+}
+.accountJp .debitServiceInner ul li div + div p{
+	text-align: center;
+}
+.accountJp .debitServiceInner ul li div .detail{
+	max-width: 310px;
+	width: 100%;
+}
+.accountJp .otherServiceInner ul li:first-child{
+	margin-bottom: 0.3rem;
+}
+
+
+/* ---------------------------
+ debitJpModal 20190515追加
+----------------------------- */
+.debitJpModal .modalBox.bgColor dl dd.debitSelect{
+	padding-left: 0;
+}
+.debitJpModal .modalBox dl dd > div.debitSelectL{
+	margin: 23px auto 20px;
+}
+.debitJpModal .modalBox dl dd > div.debitSelectR{
+	margin: 10px auto 20px;
+	padding-left: 20px;
+}
+.debitJpModal .modalBox dl dt{
+	font-size: 1.188rem;
+	padding: 10px 15px 5px;
+}
+.debitJpModal .modalBox dl dd > div p.debitSelectTtl{
+	text-align: center;
+}
+
+
+
+
+
+

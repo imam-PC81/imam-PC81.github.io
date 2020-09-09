@@ -1,0 +1,6 @@
+@import url("/shared/css/template.css");
+@import url("/shared/css/component.css");
+@import url("/shared/css/detail.css");
+@import url("/shared/css/megamenu.css");
+
+body#top{display:block;}

@@ -1,0 +1,1 @@
+document.write('<a href="/personal/account/modal_account.html" target="_blank"><img src="/shared/img/cmn_btn_011.gif" width="213" height="60" alt="セブン銀行 口座開設" class="rollover"></a>');
